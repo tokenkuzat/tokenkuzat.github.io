@@ -66,6 +66,77 @@ code,.mono{font-family:"Geist Mono",ui-monospace,monospace}
 .lbtn svg{width:14px;height:14px;fill:currentColor}.lbtn .i-pl{margin-left:2px}
 .lbtn[data-st=play] .i-pa,.lbtn[data-st=pause] .i-pl{display:none}
 @media (max-width:600px){#s-vid{padding-top:72px}.vplay{padding:5px 16px 5px 5px;gap:10px;font-size:14px}.vplay i{width:36px;height:36px}.vplay small{display:none}.lframe{border-radius:12px}.lbtn{right:10px;bottom:10px;width:36px;height:36px}}
+/* ===== nav · shared ===== */
+.nv{display:none;position:sticky;top:calc(var(--rv-h) + 14px);z-index:40;margin:14px auto 0;width:max-content;max-width:calc(100% - 24px);align-items:center;gap:2px;padding:6px;border-radius:20px;font-size:14px;letter-spacing:-.005em}
+body.v-b .nvb{display:flex}
+.nv .bd{display:flex;align-items:center;gap:10px;height:38px;padding:0 14px 0 4px;font-size:15px;font-weight:600;white-space:nowrap;border-radius:12px}
+.nv .bd img{width:30px;height:30px;border-radius:8px}
+.nv .bd span{display:block;max-width:150px;overflow:hidden;transition:max-width .6s var(--ease),opacity .4s var(--ease)}
+.nv .lk{position:relative;display:flex;align-items:center}
+.nv .lk>a,.nv .lk>button{position:relative;z-index:1;display:flex;align-items:center;gap:5px;height:38px;padding:0 12px;border-radius:12px;font-weight:500;white-space:nowrap;transition:color .25s var(--ease)}
+.nv .lk>.cur::after{content:"";position:absolute;left:50%;bottom:4px;width:4px;height:4px;margin-left:-2px;border-radius:50%;background:currentColor}
+.nv .hov{position:absolute;left:0;top:0;height:38px;width:0;border-radius:12px;opacity:0;pointer-events:none;transition:transform .45s var(--ease),width .45s var(--ease),opacity .25s var(--ease)}
+.nv .hov.snap{transition:opacity .25s var(--ease)}
+.nv .chev{width:10px;height:10px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;opacity:.6;transition:transform .35s var(--ease)}
+.nv .lg{display:flex;padding:3px;border-radius:11px;margin:0 4px}
+.nv .lg button{height:28px;padding:0 9px;border-radius:8px;font-size:12px;font-weight:600;letter-spacing:.02em;transition:background .25s var(--ease),color .25s var(--ease)}
+.nv .cta{display:flex;align-items:center;gap:10px;height:38px;padding:0 6px 0 14px;border-radius:12px;font-weight:600;white-space:nowrap;transition:background .25s var(--ease),transform .4s var(--ease)}
+.nv .cta i{width:26px;height:26px;border-radius:8px;display:grid;place-items:center;transition:transform .45s var(--ease)}
+.nv .cta .ic{width:15px;height:15px}
+.nv .cta:hover i{transform:translateY(2px)}.nv .cta:active{transform:scale(.97)}
+.nv .mono{font-family:"Geist Mono",ui-monospace,monospace;font-variant-numeric:tabular-nums}
+.nv .go{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:6px;padding:12px 10px 2px;border-top:1px solid var(--line,rgba(23,21,43,.08));font-size:13.5px;font-weight:500}
+.nv .go svg{width:12px;height:12px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;transition:transform .35s var(--ease)}
+.nv .go:hover svg{transform:translateX(3px)}
+.nv a:focus-visible,.nv button:focus-visible{outline:2px solid #6C5CE7;outline-offset:2px}
+.nv .mb{display:none;position:relative;width:40px;height:40px;border-radius:12px;flex:none;margin-left:2px}
+.nv .mb span{position:absolute;left:12px;right:12px;top:50%;height:1.6px;margin-top:-.8px;border-radius:2px;background:currentColor;transition:transform .45s var(--ease)}
+.nv .mb span:first-child{transform:translateY(-3.5px)}.nv .mb span:last-child{transform:translateY(3.5px)}
+.nv.open .mb span:first-child{transform:rotate(45deg)}.nv.open .mb span:last-child{transform:rotate(-45deg)}
+.nv .ms{position:absolute;left:0;right:0;top:calc(100% + 8px);display:none;gap:2px;padding:8px;border-radius:20px;visibility:hidden;opacity:0;transform:translateY(-6px);transition:opacity .3s var(--ease),transform .45s var(--ease),visibility 0s .45s}
+.nv.open .ms{visibility:visible;opacity:1;transform:none;transition:opacity .3s var(--ease),transform .45s var(--ease),visibility 0s}
+.nv .ms a{display:grid;gap:2px;padding:12px 12px;border-radius:14px;opacity:0;transform:translateY(6px);transition:opacity .35s var(--ease),transform .45s var(--ease),background .25s}
+.nv .ms a b{font-size:16px;font-weight:600}.nv .ms a small{font-size:13px}
+.nv.open .ms a{opacity:1;transform:none}
+.nv.open .ms a:nth-child(2){transition-delay:.03s}.nv.open .ms a:nth-child(3){transition-delay:.06s}.nv.open .ms a:nth-child(4){transition-delay:.09s}.nv.open .ms a:nth-child(5){transition-delay:.12s}
+.nv .ms .lg{justify-self:start;margin:6px 4px 4px}
+@media (max-width:1100px){.nv .lk{display:none}.nv .mb{display:block}.nv .ms{display:grid}.nv{width:calc(100% - 24px)}.nv>.lg{margin-left:auto}.nv .cta{margin-left:4px}}
+@media (max-width:600px){.nv>.lg{display:none}.nv .cta{margin-left:auto}}
+
+/* ===== B · Jonli orol ===== */
+.nvb{background:rgba(23,21,43,.95);color:#fff;box-shadow:inset 0 1px 0 rgba(255,255,255,.07),0 0 0 1px rgba(255,255,255,.06),0 18px 44px -16px rgba(10,8,30,.6)}
+.nvb.sc .bd{padding-right:6px}.nvb.sc .bd span{max-width:0;opacity:0}
+.nvb .peek{display:flex;align-items:center;gap:7px;height:38px;padding:0 10px 0 9px;margin-right:4px;border-radius:12px;background:rgba(255,255,255,.07);box-shadow:inset 0 0 0 1px rgba(255,255,255,.09);transition:background .25s var(--ease)}
+.nvb .peek:hover,.nvb .peek[aria-expanded=true]{background:rgba(255,255,255,.13)}
+.nvb .peek[aria-expanded=true] .chev{transform:rotate(180deg)}
+.nvb .ring{width:18px;height:18px;transform:rotate(-90deg)}
+.nvb .ring circle{fill:none;stroke-width:2.6;stroke:rgba(255,255,255,.2)}
+.nvb .ring .v{stroke:#fff;stroke-linecap:round;stroke-dasharray:100;stroke-dashoffset:37;transition:stroke-dashoffset .8s var(--ease)}
+.nvb .peek b{font-size:13px;font-weight:600}
+.nvb .peek .pl{font-size:13px;color:rgba(255,255,255,.72)}
+.nvb .lk>*{color:rgba(255,255,255,.7)}
+.nvb .lk>*:hover,.nvb .lk>.cur{color:#fff}
+.nvb .hov{background:rgba(255,255,255,.09)}
+.nvb .lg{background:rgba(255,255,255,.07)}
+.nvb .lg button{color:rgba(255,255,255,.62)}.nvb .lg button:hover{color:#fff}
+.nvb .lg button[aria-pressed=true]{background:#fff;color:var(--ink)}
+.nvb .cta{background:#FFC850;color:var(--ink)}.nvb .cta:hover{background:#FFD371}
+.nvb .cta i{background:rgba(23,21,43,.1)}
+.nvb .mb{background:rgba(255,255,255,.08)}
+.nvb a:focus-visible,.nvb button:focus-visible{outline-color:#FFC850}
+.nvb .prog{position:absolute;left:20px;right:20px;bottom:0;height:2px;border-radius:2px;overflow:hidden;opacity:0;transition:opacity .4s var(--ease)}
+.nvb.sc .prog{opacity:1}
+.nvb .prog span{display:block;height:100%;background:#FFC850;transform:scaleX(var(--p,0));transform-origin:0 50%}
+.nvb .pk{position:absolute;top:calc(100% + 12px);left:0;width:372px;max-width:calc(100vw - 24px);border-radius:20px;overflow:hidden;background:#1D1B30;color:#fff;opacity:0;pointer-events:none;
+ clip-path:inset(0 0 100% 0 round 20px);box-shadow:0 0 0 1px rgba(255,255,255,.08),0 34px 80px -24px rgba(10,8,30,.75);transition:clip-path .55s var(--ease),opacity .25s var(--ease)}
+.nvb.pko .pk{opacity:1;pointer-events:auto;clip-path:inset(0 0 0 0 round 20px)}
+.nvb .pk img{display:block;width:100%;height:auto;aspect-ratio:742/681}
+.nvb .pkf{padding:12px 16px 14px;--line:rgba(255,255,255,.1)}
+.nvb .pkf p{font-size:13px;line-height:1.45;color:rgba(255,255,255,.74)}
+.nvb .ms{background:#1D1B30;box-shadow:0 0 0 1px rgba(255,255,255,.08),0 24px 50px -20px rgba(10,8,30,.7)}
+.nvb .ms a:hover{background:rgba(255,255,255,.07)}.nvb .ms small{color:rgba(255,255,255,.6)}
+@media (max-width:700px){.nvb .peek .pl,.nvb .bd span{display:none}.nvb .bd{padding-right:4px}}
+
 @media (prefers-reduced-motion:reduce){.rev{opacity:1;transform:none;filter:none;transition:none}*{animation:none!important;transition:none!important}}
 section{padding:120px 0;position:relative}
 h1{font-size:clamp(42px,6.6vw,88px);line-height:.98;letter-spacing:-.045em;font-weight:600;text-wrap:balance}
@@ -256,16 +327,9 @@ code.in{font-size:.92em;background:#EEEDF3;padding:1px 6px;border-radius:6px}
 .k-map .det.sw .f,.k-map .det.sw .kv b{opacity:0}
 
 /* ===== nav ===== */
-.nav{position:sticky;top:calc(var(--rv-h) + 14px);z-index:20;margin:14px auto 0;width:max-content;max-width:calc(100% - 24px);display:flex;align-items:center;gap:6px;padding:6px 6px 6px 14px;border-radius:99px;background:rgba(255,255,255,.74);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);box-shadow:0 0 0 1px rgba(23,21,43,.06),0 10px 30px -14px rgba(23,21,43,.25)}
-.brand{display:flex;align-items:center;gap:8px;font-weight:600;margin-right:10px;white-space:nowrap}
-.brand img{width:24px;height:24px;border-radius:6px}
-.nav a.l{padding:7px 12px;border-radius:99px;color:var(--muted);font-size:14px;transition:background .4s var(--ease),color .4s var(--ease)}
-.nav a.l:hover{background:rgba(23,21,43,.05);color:var(--ink)}
 .lang{display:flex;background:rgba(23,21,43,.05);border-radius:99px;padding:3px;margin-left:4px}
 .lang button{padding:4px 9px;border-radius:99px;font-size:12px;font-weight:600;color:var(--muted)}
 .lang button[aria-pressed=true]{background:#fff;color:var(--ink);box-shadow:0 1px 2px rgba(0,0,0,.08)}
-.nav .dl{margin-left:4px;padding:8px 14px;border-radius:99px;background:var(--ink);color:#fff;font-size:14px;font-weight:500;white-space:nowrap}
-@media (max-width:900px){.nav a.l{display:none}}
 
 /* ===== hero ===== */
 .hero{position:relative;text-align:center;padding:88px 0 0}
@@ -500,11 +564,10 @@ footer a:hover{color:var(--ink)}
 .t2 .endb::before{content:"";position:absolute;inset:auto -10% -40% -10%;height:80%;background:radial-gradient(50% 60% at 30% 50%,rgba(47,125,132,.55),transparent 70%),radial-gradient(40% 60% at 75% 50%,rgba(108,92,231,.5),transparent 70%)}
 .t2 .endb>*{position:relative}
 .t2 .endb .pill.pri{background:#FFC850}
-.t2 .nav{background:rgba(255,255,255,.86)}
 
 </style>
 </head>
-<body>
+<body class="v-b">
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <symbol id="i-arrow" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.4697 5.46967C12.7626 5.17678 13.2374 5.17678 13.5303 5.46967L19.5303 11.4697C19.8232 11.7626 19.8232 12.2374 19.5303 12.5303L13.5303 18.5303C13.2374 18.8232 12.7626 18.8232 12.4697 18.5303C12.1768 18.2374 12.1768 17.7626 12.4697 17.4697L17.1893 12.75H5C4.58579 12.75 4.25 12.4142 4.25 12C4.25 11.5858 4.58579 11.25 5 11.25H17.1893L12.4697 6.53033C12.1768 6.23744 12.1768 5.76256 12.4697 5.46967Z"/></symbol>
   <symbol id="i-dl" viewBox="0 0 24 24"><g transform="translate(2 3)"><path d="M5.3672,4.7326 C5.7812,4.7326 6.1172,5.0686 6.1172,5.4826 C6.1172,5.8966 5.7812,6.2326 5.3672,6.2326 L4.4262,6.2326 C2.8122,6.2326 1.5002,7.5436 1.5002,9.1566 L1.5002,14.0416 C1.5002,15.6606 2.8162,16.9766 4.4352,16.9766 L15.5752,16.9766 C17.1872,16.9766 18.5002,15.6636 18.5002,14.0516 L18.5002,9.1676 C18.5002,7.5486 17.1832,6.2326 15.5662,6.2326 L14.6342,6.2326 C14.2202,6.2326 13.8842,5.8966 13.8842,5.4826 C13.8842,5.0686 14.2202,4.7326 14.6342,4.7326 L15.5662,4.7326 C18.0112,4.7326 20.0002,6.7226 20.0002,9.1676 L20.0002,14.0516 C20.0002,16.4916 18.0142,18.4766 15.5752,18.4766 L4.4352,18.4766 C1.9902,18.4766 0.0002,16.4876 0.0002,14.0416 L0.0002,9.1566 C0.0002,6.7166 1.9852,4.7326 4.4262,4.7326 L5.3672,4.7326 Z M10.001,0.0001 C10.415,0.0001 10.751,0.3361 10.751,0.7501 L10.7502,10.9761 L12.386,9.3341 C12.678,9.0401 13.152,9.0401 13.446,9.3321 C13.739,9.6241 13.74,10.0991 13.448,10.3931 L10.532,13.3201 C10.393,13.4601 10.201,13.5411 10.001,13.5411 C9.801,13.5411 9.609,13.4601 9.47,13.3201 L6.554,10.3931 C6.262,10.0991 6.263,9.6241 6.556,9.3321 C6.85,9.0401 7.324,9.0401 7.616,9.3341 L9.2502,10.9761 L9.251,0.7501 C9.251,0.3361 9.587,0.0001 10.001,0.0001 Z"/></g></symbol>
@@ -517,14 +580,33 @@ footer a:hover{color:var(--ink)}
 </svg>
 
 <main class="site t2" id="site">
-  <nav class="nav" aria-label="Asosiy">
-    <a class="brand" href="#top"><img src="img/icon.png" alt="">Token Kuzatuv</a>
-    <a class="l" href="#s-app" data-t="nav_app"></a>
-    <a class="l" href="#s-sav" data-t="nav_sav"></a>
-    <a class="l" href="#s-priv" data-t="nav_priv"></a>
-    <a class="l" href="#s-inst" data-t="nav_inst"></a>
-    <div class="lang" data-lang></div>
-    <a class="dl" href="#s-inst" data-t="nav_dl"></a>
+  <!-- B · Jonli orol -->
+  <nav class="nv nvb" aria-label="Asosiy" data-v="b">
+    <a class="bd" href="#top"><img src="img/icon.png" alt=""><span>Token Kuzatuv</span></a>
+    <button class="peek" type="button" aria-expanded="false" aria-controls="pk-b">
+      <svg class="ring" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7.5"/><circle class="v" cx="10" cy="10" r="7.5" pathLength="100"/></svg>
+      <b class="mono">63%</b><span class="pl" data-t="pk_btn"></span><svg class="chev" viewBox="0 0 10 10" aria-hidden="true"><path d="M2.5 4 5 6.5 7.5 4"/></svg>
+    </button>
+    <div class="lk">
+      <span class="hov" aria-hidden="true"></span>
+      <a href="#s-app" data-sec="s-app" data-t="nav_app"></a><a href="#s-sav" data-sec="s-sav" data-t="nav_sav"></a><a href="#s-priv" data-sec="s-priv" data-t="nav_priv"></a><a href="#s-inst" data-sec="s-inst" data-t="nav_inst"></a>
+    </div>
+    <div class="lg" data-lang></div>
+    <a class="cta" href="#s-inst"><span data-t="nav_dl"></span><i><svg class="ic"><use href="#i-dl"/></svg></i></a>
+    <button class="mb" type="button" aria-expanded="false" data-aria="nav_menu"><span></span><span></span></button>
+    <span class="prog" aria-hidden="true"><span></span></span>
+    <div class="pk" id="pk-b">
+      <img data-img="panel" data-alt="alt_panel" alt="">
+      <div class="pkf"><p data-t="pk_cap"></p><a class="go" href="#s-app"><span data-t="dd_go_app"></span><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2 6h8M6.5 2.5 10 6 6.5 9.5"/></svg></a></div>
+    </div>
+    <div class="ms">
+      <a href="#s-app"><b data-t="nav_app"></b><small data-t="dd_ms_app"></small></a>
+      <a href="#s-sav"><b data-t="nav_sav"></b><small data-t="dd_ms_sav"></small></a>
+      <a href="#s-priv"><b data-t="nav_priv"></b><small data-t="dd_ms_priv"></small></a>
+      <a href="#s-inst"><b data-t="nav_inst"></b><small data-t="dd_ms_inst"></small></a>
+      <a href="#s-faq"><b data-t="nav_faq"></b></a>
+      <div class="lg" data-lang></div>
+    </div>
   </nav>
 
   <header class="hero" id="top">
@@ -674,7 +756,7 @@ footer a:hover{color:var(--ink)}
 const ICON="img/icon.png", REPO="https://github.com/aliumirovux/TokenKuzat", RELURL=REPO+"/releases/latest";
 const T={
 uz:{
- nav_app:"Ilova ichi",nav_sav:"Tejash",nav_priv:"Maxfiylik",nav_inst:"O‘rnatish",nav_faq:"Savollar",nav_dl:"Yuklab olish",nav_feat:"Imkoniyatlar",
+ nav_menu:"Menyuni ochish",nav_close:"Menyuni yopish",dd_nul:"",dd_ov:"Limit, jonli faollik va bugungi sarf",dd_map:"Har sessiya agentlar xaritasi sifatida",dd_his:"Kunlar va loyihalar kesimida",dd_off:"Agentlaringiz ofisda ishlayotgani",dd_go_app:"Ilova ichini ko‘rish",dd_go_sav:"Tejash qanday ishlaydi",dd_go_priv:"Maxfiylik haqida batafsil",dd_go_inst:"Barcha o‘rnatish usullari",dd_mac:"Faqat Mac’ingizda",dd_plug:"Claude Code plaginini o‘rnatish",dd_dmg:".dmg · macOS 13+",dd_ms_app:"4 oyna: Bugun, xarita, tarix, ofis",dd_ms_sav:"Isrof sababi va tuzatish",dd_ms_priv:"Ma’lumot Mac’dan chiqmaydi",dd_ms_inst:".dmg yoki Claude Code plagini",pk_btn:"Ilovani ko‘ring",pk_cap:"Menyu satridagi belgini bosganingizda aynan shu panel ochiladi.",ck_ph:"Qayerga o‘tamiz?",ck_in:"Bo‘lim yoki amalni yozing…",ck_sec:"Bo‘limlar",ck_act:"Amallar",ck_none:"Hech narsa topilmadi",ck_copy:"Plagin buyrug‘ini nusxalash",ck_gh:"GitHub’da ochish",ck_lang:"Switch to English",ck_hint:"↑↓ tanlash · ↵ ochish · esc yopish",ck_aria:"Buyruqlar paneli",nav_app:"Ilova ichi",nav_sav:"Tejash",nav_priv:"Maxfiylik",nav_inst:"O‘rnatish",nav_faq:"Savollar",nav_dl:"Yuklab olish",nav_feat:"Imkoniyatlar",
 
  h1:"Tokenlaringiz qayerga ketyapti — <span class='g'>endi ko‘rinadi</span>",
  sub:"Token Kuzatuv Mac menyu satrida turadi va jonli ko‘rsatadi: qaysi agent ishlayapti, nimani o‘qiyapti, qancha token ketdi va limit qachon tugaydi.",
@@ -740,7 +822,7 @@ vid_h:"Bir daqiqaga yetmay hammasini ko‘ring",vid_d:"Qisqa tanishtiruv: limit,
  c_q:"Bugun qancha token ketdi?",c_a:"Bugun <b>1,28M</b> token. Eng ko‘pi sayr-web’da — 612K (48%). 5 soatlik limitning 34% i ishlatildi, 16:40 da tiklanadi."
 },
 en:{
- nav_app:"Inside",nav_sav:"Savings",nav_priv:"Privacy",nav_inst:"Install",nav_faq:"FAQ",nav_dl:"Download",nav_feat:"Features",
+ nav_menu:"Open menu",nav_close:"Close menu",dd_nul:"",dd_ov:"Limits, live activity and today’s spend",dd_map:"Every session as an agent map",dd_his:"By day and by project",dd_off:"Your agents at work in an office",dd_go_app:"See inside the app",dd_go_sav:"How savings work",dd_go_priv:"Privacy in detail",dd_go_inst:"All install options",dd_mac:"Only on your Mac",dd_plug:"Install the Claude Code plugin",dd_dmg:".dmg · macOS 13+",dd_ms_app:"4 windows: Today, map, history, office",dd_ms_sav:"Why tokens are wasted and the fix",dd_ms_priv:"Your data never leaves your Mac",dd_ms_inst:".dmg or the Claude Code plugin",pk_btn:"Peek inside",pk_cap:"This is exactly the panel you get when you click the menu bar icon.",ck_ph:"Jump to…",ck_in:"Type a section or action…",ck_sec:"Sections",ck_act:"Actions",ck_none:"No matches",ck_copy:"Copy the plugin command",ck_gh:"Open on GitHub",ck_lang:"O‘zbekchaga o‘tish",ck_hint:"↑↓ select · ↵ open · esc close",ck_aria:"Command menu",nav_app:"Inside",nav_sav:"Savings",nav_priv:"Privacy",nav_inst:"Install",nav_faq:"FAQ",nav_dl:"Download",nav_feat:"Features",
 
  h1:"See exactly where your <span class='g'>tokens go</span>",
  sub:"Token Kuzatuv lives in your Mac menu bar and shows it live: which agent is running, what it’s reading, how many tokens it used and when your limit runs out.",
@@ -925,6 +1007,60 @@ document.querySelector(".vplay").addEventListener("click",()=>{pv.controls=true;
 dv.addEventListener("play",lbLab);dv.addEventListener("pause",lbLab);
 lb.addEventListener("click",()=>{if(dv.paused){dvHeld=false;dv.play().catch(()=>{})}else{dvHeld=true;dv.pause()}});
 if(!reduce)new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){if(!dvHeld&&pv.paused)dv.play().catch(()=>{})}else dv.pause()}),{threshold:.35}).observe(dv);
+
+/* ===== nav ===== */
+const NAVS=[...document.querySelectorAll(".nv")];
+const smooth=()=>reduce?"auto":"smooth";
+C.ddsav=()=>t("cz").slice(0,3).map(([a,b,c])=>`<div><span><b>${a}</b><small>${b}</small></span><em>${c}</em></div>`).join("");
+function goTo(sel){const el=document.querySelector(sel);if(el)el.scrollIntoView({behavior:smooth(),block:"start"})}
+
+/* hover pill that follows the pointer between links */
+function hovTo(lk,el){const h=lk.querySelector(".hov");if(!h)return;if(!el){h.style.opacity=0;return}
+ if(h.style.opacity!=="1"){h.classList.add("snap");h.style.width=el.offsetWidth+"px";h.style.transform=`translateX(${el.offsetLeft}px)`;void h.offsetWidth;h.classList.remove("snap")}
+ h.style.width=el.offsetWidth+"px";h.style.transform=`translateX(${el.offsetLeft}px)`;h.style.opacity=1}
+document.querySelectorAll(".nv .lk").forEach(lk=>{
+ lk.querySelectorAll(":scope>a,:scope>button").forEach(el=>{el.addEventListener("pointerenter",()=>hovTo(lk,el));el.addEventListener("focus",()=>hovTo(lk,el))});
+ lk.addEventListener("pointerleave",()=>{if(!lk.closest(".nv").classList.contains("ddo"))hovTo(lk,null)});
+ lk.addEventListener("focusout",e=>{if(!lk.contains(e.relatedTarget)&&!lk.closest(".nv").classList.contains("ddo"))hovTo(lk,null)})});
+
+/* current section */
+let navCur;
+function setCur(id){if(id===navCur)return;navCur=id;document.querySelectorAll(".nv [data-sec]").forEach(el=>{const on=el.dataset.sec===id;el.classList.toggle("cur",on);if(el.tagName==="A"){if(on)el.setAttribute("aria-current","true");else el.removeAttribute("aria-current")}})}
+const spyIO=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting)setCur({"s-feat":null,"s-faq":null,"s-vid":null,"s-hw":null}[x.target.id]===null?null:x.target.id)}),{rootMargin:"-45% 0px -54% 0px"});
+["s-vid","s-hw","s-app","s-feat","s-sav","s-priv","s-inst","s-faq"].forEach(id=>{const el=document.getElementById(id);if(el)spyIO.observe(el)});
+
+let ddCur=null;const na=null,ddClose=()=>{};
+
+/* B · live island + app peek */
+const nb=document.querySelector(".nvb");let pkSet=()=>{};
+if(nb){const pk=nb.querySelector(".pk"),pb=nb.querySelector(".peek");let pkT;pk.inert=true;
+ pkSet=o=>{nb.classList.toggle("pko",o);pb.setAttribute("aria-expanded",o);pk.inert=!o;if(o){const W=nb.offsetWidth,pw=Math.min(372,W);pk.style.width=pw+"px";pk.style.left=Math.max(0,Math.min(pb.offsetLeft,W-pw))+"px"}};
+ let pkAt=0;pb.addEventListener("click",()=>{const o=nb.classList.contains("pko");if(!o)pkSet(true);else if(Date.now()-pkAt>700)pkSet(false)});
+ pb.addEventListener("pointerenter",e=>{if(e.pointerType==="mouse"){clearTimeout(pkT);if(!nb.classList.contains("pko"))pkAt=Date.now();pkSet(true)}});
+ nb.addEventListener("pointerleave",e=>{if(e.pointerType==="mouse")pkT=setTimeout(()=>pkSet(false),180)});
+ pk.addEventListener("pointerenter",()=>clearTimeout(pkT));
+ nb.addEventListener("focusout",e=>{if(!nb.contains(e.relatedTarget))pkSet(false)});
+ pk.addEventListener("click",e=>{if(e.target.closest("a"))pkSet(false)});
+}
+
+/* scroll: compact island, progress line */
+let navTick=false;
+function onNavY(){navTick=false;const y=scrollY,H=document.documentElement.scrollHeight-innerHeight;
+ if(y<200)setCur(null);
+ NAVS.forEach(n=>{n.classList.toggle("sc",y>160);n.style.setProperty("--p",H>0?Math.min(1,y/H).toFixed(4):0)})}
+addEventListener("scroll",()=>{if(!navTick){navTick=true;requestAnimationFrame(onNavY)}},{passive:true});
+
+/* mobile menus */
+function closeNav(n){n.classList.remove("open");const b=n.querySelector(".mb");b.setAttribute("aria-expanded","false");b.setAttribute("aria-label",t("nav_menu"))}
+NAVS.forEach(n=>{const b=n.querySelector(".mb");if(!b)return;
+ b.addEventListener("click",()=>{const o=!n.classList.contains("open");ddClose();pkSet(false);n.classList.toggle("open",o);b.setAttribute("aria-expanded",o);b.setAttribute("aria-label",t(o?"nav_close":"nav_menu"));if(o)n.querySelector(".ms a").focus()});
+ n.querySelector(".ms").addEventListener("click",e=>{if(e.target.closest("a"))closeNav(n)})});
+addEventListener("keydown",e=>{if(e.key!=="Escape")return;
+ if(ddCur){const tr=na.querySelector(".tr[aria-expanded=true]");ddClose();tr&&tr.focus();return}
+ if(nb&&nb.classList.contains("pko")){pkSet(false);nb.querySelector(".peek").focus();return}
+ NAVS.forEach(n=>{if(n.classList.contains("open")){closeNav(n);n.querySelector(".mb").focus()}})});
+document.addEventListener("pointerdown",e=>{NAVS.forEach(n=>{if(!n.contains(e.target)){if(n.classList.contains("open"))closeNav(n);if(n===nb)pkSet(false);if(n===na)ddClose()}})});
+const _render=render;render=function(){ddClose();_render()};
 render();document.querySelectorAll(".rev").forEach(el=>io.observe(el));
 </script>
 </body>
