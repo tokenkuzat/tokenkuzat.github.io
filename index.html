@@ -147,6 +147,9 @@ body.v-b .nvb{display:flex}
 .nvb .pkf p{font-size:13px;line-height:1.45;color:rgba(255,255,255,.74)}
 .nvb .ms{background:#1D1B30;box-shadow:0 0 0 1px rgba(255,255,255,.08),0 24px 50px -20px rgba(10,8,30,.7)}
 .nvb .ms a:hover{background:rgba(255,255,255,.07)}.nvb .ms small{color:rgba(255,255,255,.6)}
+/* stable width across UZ / RU / EN: the island does not resize or jump when the language changes */
+.nvb .cta{min-width:128px;justify-content:space-between}
+@media (min-width:1101px){.nvb .peek{min-width:202px}.nvb .peek .chev{margin-left:auto}.nvb .lk{min-width:372px;justify-content:center}}
 @media (max-width:700px){.nvb .peek .pl,.nvb .bd span{display:none}.nvb .bd{padding-right:4px}}
 
 @media (prefers-reduced-motion:reduce){.rev{opacity:1;transform:none;filter:none;transition:none}*{animation:none!important;transition:none!important}}
