@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Token Kuzatuv — Claude Code tokenlari Mac menyu satrida</title>
-<meta name="description" content="Token Kuzatuv — Mac menyu satridagi bepul, ochiq kodli ilova: Claude Code tokenlari qayerga ketayotgani, qaysi agent ishlayotgani va limit qachon tugashini jonli ko‘rsatadi.">
+<meta name="description" content="Token Kuzatuv — Mac menyu satridagi bepul, oçiq kodli ilova: Claude Code tokenlari qayerga ketayotgani, qaysi agent işlayotgani va limit qaçon tugaşini jonli körsatadi.">
 <meta name="theme-color" content="#222A63">
 <link rel="icon" type="image/png" href="favicon.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -17,12 +17,18 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preload" href="fonts/geist-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
 <style>
-@font-face{font-family:Geist;font-style:normal;font-weight:400;font-display:swap;src:url(fonts/geist-latin-400-normal.woff2) format("woff2")}
-@font-face{font-family:Geist;font-style:normal;font-weight:500;font-display:swap;src:url(fonts/geist-latin-500-normal.woff2) format("woff2")}
-@font-face{font-family:Geist;font-style:normal;font-weight:600;font-display:swap;src:url(fonts/geist-latin-600-normal.woff2) format("woff2")}
-@font-face{font-family:Geist;font-style:normal;font-weight:700;font-display:swap;src:url(fonts/geist-latin-700-normal.woff2) format("woff2")}
-@font-face{font-family:"Geist Mono";font-style:normal;font-weight:400;font-display:swap;src:url(fonts/geist-mono-latin-400-normal.woff2) format("woff2")}
-@font-face{font-family:"Geist Mono";font-style:normal;font-weight:500;font-display:swap;src:url(fonts/geist-mono-latin-500-normal.woff2) format("woff2")}
+@font-face{font-family:Geist;font-style:normal;font-weight:400;font-display:swap;src:url(fonts/geist-latin-400-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:Geist;font-style:normal;font-weight:400;font-display:swap;src:url(fonts/geist-latin-ext-400-normal.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:Geist;font-style:normal;font-weight:500;font-display:swap;src:url(fonts/geist-latin-500-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:Geist;font-style:normal;font-weight:500;font-display:swap;src:url(fonts/geist-latin-ext-500-normal.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:Geist;font-style:normal;font-weight:600;font-display:swap;src:url(fonts/geist-latin-600-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:Geist;font-style:normal;font-weight:600;font-display:swap;src:url(fonts/geist-latin-ext-600-normal.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:Geist;font-style:normal;font-weight:700;font-display:swap;src:url(fonts/geist-latin-700-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:Geist;font-style:normal;font-weight:700;font-display:swap;src:url(fonts/geist-latin-ext-700-normal.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Geist Mono";font-style:normal;font-weight:400;font-display:swap;src:url(fonts/geist-mono-latin-400-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Geist Mono";font-style:normal;font-weight:400;font-display:swap;src:url(fonts/geist-mono-latin-ext-400-normal.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Geist Mono";font-style:normal;font-weight:500;font-display:swap;src:url(fonts/geist-mono-latin-500-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Geist Mono";font-style:normal;font-weight:500;font-display:swap;src:url(fonts/geist-mono-latin-ext-500-normal.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
 :root{--ease:cubic-bezier(.32,.72,0,1);--ease-out:cubic-bezier(.16,1,.3,1);--acc:#6C5CE7;
   --t-cache:#6C5CE7;--t-fresh:#0E9F8E;--t-input:#B04FD8;--t-out:#E0731C;--t-agents:#2F7BE5;--rv-h:0px;
   --ink:#17152B;--muted:#55536B;--teal:#2F7D84;--indigo:#2B3473;--sun:#FFC850}
@@ -663,7 +669,7 @@ footer a:hover{color:var(--ink)}
     <div class="wrap">
       <div class="sh c rev"><h2 data-t="app_h"></h2><p class="lead" data-t="app_d"></p></div>
       <div class="shots rev">
-        <div class="stabs" role="tablist" aria-label="Bo‘limlar">
+        <div class="stabs" role="tablist" data-aria="ck_sec" aria-label="Bölimlar">
           <button role="tab" aria-selected="true" data-pg="bugun"><span data-t="pg_ov"></span></button>
           <button role="tab" aria-selected="false" data-pg="xulosa"><span data-t="pg_map"></span></button>
           <button role="tab" aria-selected="false" data-pg="tarix"><span data-t="pg_his"></span></button>
@@ -756,70 +762,70 @@ footer a:hover{color:var(--ink)}
 const ICON="img/icon.png", REPO="https://github.com/aliumirovux/TokenKuzat", RELURL=REPO+"/releases/latest";
 const T={
 uz:{
- nav_menu:"Menyuni ochish",nav_close:"Menyuni yopish",dd_nul:"",dd_ov:"Limit, jonli faollik va bugungi sarf",dd_map:"Har sessiya agentlar xaritasi sifatida",dd_his:"Kunlar va loyihalar kesimida",dd_off:"Agentlaringiz ofisda ishlayotgani",dd_go_app:"Ilova ichini ko‘rish",dd_go_sav:"Tejash qanday ishlaydi",dd_go_priv:"Maxfiylik haqida batafsil",dd_go_inst:"Barcha o‘rnatish usullari",dd_mac:"Faqat Mac’ingizda",dd_plug:"Claude Code plaginini o‘rnatish",dd_dmg:".dmg · macOS 13+",dd_ms_app:"4 oyna: Bugun, xarita, tarix, ofis",dd_ms_sav:"Isrof sababi va tuzatish",dd_ms_priv:"Ma’lumot Mac’dan chiqmaydi",dd_ms_inst:".dmg yoki Claude Code plagini",pk_btn:"Ilovani ko‘ring",pk_cap:"Menyu satridagi belgini bosganingizda aynan shu panel ochiladi.",ck_ph:"Qayerga o‘tamiz?",ck_in:"Bo‘lim yoki amalni yozing…",ck_sec:"Bo‘limlar",ck_act:"Amallar",ck_none:"Hech narsa topilmadi",ck_copy:"Plagin buyrug‘ini nusxalash",ck_gh:"GitHub’da ochish",ck_lang:"Switch to English",ck_hint:"↑↓ tanlash · ↵ ochish · esc yopish",ck_aria:"Buyruqlar paneli",nav_app:"Ilova ichi",nav_sav:"Tejash",nav_priv:"Maxfiylik",nav_inst:"O‘rnatish",nav_faq:"Savollar",nav_dl:"Yuklab olish",nav_feat:"Imkoniyatlar",
+ nav_menu:"Menyuni oçiş",nav_close:"Menyuni yopiş",dd_nul:"",dd_ov:"Limit, jonli faollik va bugungi sarf",dd_map:"Har sessiya agentlar xaritasi sifatida",dd_his:"Kunlar va loyihalar kesimida",dd_off:"Agentlaringiz ofisda işlayotgani",dd_go_app:"Ilova içini köriş",dd_go_sav:"Tejaş qanday işlaydi",dd_go_priv:"Maxfiylik haqida batafsil",dd_go_inst:"Barça örnatiş usullari",dd_mac:"Faqat Mac’ingizda",dd_plug:"Claude Code plaginini örnatiş",dd_dmg:".dmg · macOS 13+",dd_ms_app:"4 oyna: Bugun, xarita, tarix, ofis",dd_ms_sav:"Isrof sababi va tuzatiş",dd_ms_priv:"Ma’lumot Mac’dan çiqmaydi",dd_ms_inst:".dmg yoki Claude Code plagini",pk_btn:"Ilovani köring",pk_cap:"Menyu satridagi belgini bosganingizda aynan şu panel oçiladi.",ck_ph:"Qayerga ötamiz?",ck_in:"Bölim yoki amalni yozing…",ck_sec:"Bölimlar",ck_act:"Amallar",ck_none:"Heç narsa topilmadi",ck_copy:"Plagin buyruğini nusxalaş",ck_gh:"GitHub’da oçiş",ck_lang:"Switch to English",ck_hint:"↑↓ tanlaş · ↵ oçiş · esc yopiş",ck_aria:"Buyruqlar paneli",nav_app:"Ilova içi",nav_sav:"Tejaş",nav_priv:"Maxfiylik",nav_inst:"Örnatiş",nav_faq:"Savollar",nav_dl:"Yuklab oliş",nav_feat:"Imkoniyatlar",
 
- h1:"Tokenlaringiz qayerga ketyapti — <span class='g'>endi ko‘rinadi</span>",
- sub:"Token Kuzatuv Mac menyu satrida turadi va jonli ko‘rsatadi: qaysi agent ishlayapti, nimani o‘qiyapti, qancha token ketdi va limit qachon tugaydi.",
- cta_dl:"macOS uchun yuklab olish",cta_copy:"Nusxalandi",fine:"Bepul · Ochiq kod · macOS 13+ · Apple Silicon va Intel",ver:"So‘nggi versiya",
- an1:"menyu satrida qolgan limit",an2:"5 soat va hafta limiti",an3:"shu sur’atda qachon tugaydi",an4:"sessiya sxemasi va tokenlar",
- pf1_b:"1 soniya",pf1:"yangi qatorlar shunchalik tez o‘qiladi",pf2_b:"30 kun",pf2:"transkriptlar kuzatiladi, tarix undan ham uzoq saqlanadi",pf3:"hisob, server va obuna kerak emas",pf4_b:"4 xil",pf4:"bildirishnoma: tugadi, osildi, xato, limit",
- diff_a:"Limit foizini ko‘rsatadigan ilovalar ko‘p.",diff_b:"Token Kuzatuv sababini ko‘rsatadi.",
-hw_h:"Uch qadam, hech qanday sozlashsiz",
- hw1_t:"Claude Code yozadi",hw1_d:"Har javob va asbob chaqiruvi <code class='in'>~/.claude/projects</code> dagi .jsonl faylga tushadi — Claude Code buni o‘zi qiladi.",
- hw2_t:"Token Kuzatuv o‘qiydi",hw2_d:"Faqat yangi qo‘shilgan qatorlarni, har soniyada. Bir javob bir necha qatorga bo‘linsa ham bir marta sanaladi.",hw2_c:"1 marta",
- hw3_t:"Siz ko‘rasiz",hw3_d:"Menyu satri, xarita, tejash va bildirishnomalar — hammasi shu ma’lumotdan, Mac’ingizdan chiqmasdan.",
- app_h:"Bitta oynada butun manzara",app_d:"Menyu satridagi belgini bosing — katta oyna ochiladi. Bo‘limlarni bosib ko‘ring.",
- pg_ov:"Bugun",pg_map:"Agentlar sxemasi",pg_sav:"Tejash",pg_his:"Tarix",pg_off:"Ofis",
-vid_h:"Bir daqiqaga yetmay hammasini ko‘ring",vid_d:"Qisqa tanishtiruv: limit, agentlar xaritasi, tejash va bildirishnomalar. Video ingliz tilida.",vid_btn:"Videoni ko‘rish",vid_aria:"Token Kuzatuv tanishtiruv videosi, ingliz tilida, 39 soniya",live_t:"Haqiqiy yozuv",live_d:"Documents sessiyasi: agentlar xaritasi, Tejash oynasi va Bugun sahifasi. Ovozsiz, 1,5× tezlikda.",live_aria:"Ilovadan ekran yozuvi: sessiya xaritasi, tejash oynasi va Bugun sahifasi",live_play:"Videoni qo‘yish",live_pause:"Videoni to‘xtatish",
- shot_cap:"Ilovaning haqiqiy oynalari, muallifning Mac’idan olingan.",alt_map:"Token Kuzatuv: sessiya sxemasi — so‘rov, asosiy agent, asboblar va natija",alt_panel:"Menyu satri paneli: 5 soatlik va haftalik limit, qayerga ketgani va bashorat",alt_bugun:"Bugun sahifasi: Claude limiti halqalari va bashorat",alt_tarix:"Tarix sahifasi: 30 kunlik grafik, tarkib va jadval",alt_ofis:"Ofis: agentlar robot bo‘lib ishlaydigan 3D bino",alt_cloud:"5 soatlik limit qayerga ketdi: Mac’da, chat va bulutda, kuzatuvdan oldin",
- ov_now:"HOZIR",ov_now_t:"sayr-web — asosiy agent fayllarni o‘qiyapti",
- ov_m1:"Bugun",ov_m1e:"kechagidan +12%",ov_m2:"Faol vaqt",ov_m2v:"3 soat 40 daq",ov_m3:"Sessiyalar",ov_m3v:"7",ov_m3e:"2 tasi ishlayapti",ov_m4:"Tezlik",
- ov_chart:"Soatlar bo‘yicha token tarkibi",lg1:"Kesh o‘qish",lg2:"Kesh yozish",lg3:"Kiritish",lg4:"Javob",
- sv_pg:"Loyihalar · 7 kun",his_h:"Oxirgi 30 kun",his_c1:"Kun",his_c2:"Token",his_c3:"Eng ko‘p",his_csv:"CSV eksport",
+ h1:"Tokenlaringiz qayerga ketyapti — <span class='g'>endi körinadi</span>",
+ sub:"Token Kuzatuv Mac menyu satrida turadi va jonli körsatadi: qaysi agent işlayapti, nimani öqiyapti, qança token ketdi va limit qaçon tugaydi.",
+ cta_dl:"macOS uçun yuklab oliş",cta_copy:"Nusxalandi",fine:"Bepul · Oçiq kod · macOS 13+ · Apple Silicon va Intel",ver:"Sönggi versiya",
+ an1:"menyu satrida qolgan limit",an2:"5 soat va hafta limiti",an3:"şu sur’atda qaçon tugaydi",an4:"sessiya sxemasi va tokenlar",
+ pf1_b:"1 soniya",pf1:"yangi qatorlar şunçalik tez öqiladi",pf2_b:"30 kun",pf2:"transkriptlar kuzatiladi, tarix undan ham uzoq saqlanadi",pf3:"hisob, server va obuna kerak emas",pf4_b:"4 xil",pf4:"bildirişnoma: tugadi, osildi, xato, limit",
+ diff_a:"Limit foizini körsatadigan ilovalar köp.",diff_b:"Token Kuzatuv sababini körsatadi.",
+hw_h:"Uç qadam, heç qanday sozlaşsiz",
+ hw1_t:"Claude Code yozadi",hw1_d:"Har javob va asbob çaqiruvi <code class='in'>~/.claude/projects</code> dagi .jsonl faylga tuşadi — Claude Code buni özi qiladi.",
+ hw2_t:"Token Kuzatuv öqiydi",hw2_d:"Faqat yangi qöşilgan qatorlarni, har soniyada. Bir javob bir neça qatorga bölinsa ham bir marta sanaladi.",hw2_c:"1 marta",
+ hw3_t:"Siz körasiz",hw3_d:"Menyu satri, xarita, tejaş va bildirişnomalar — hammasi şu ma’lumotdan, Mac’ingizdan çiqmasdan.",
+ app_h:"Bitta oynada butun manzara",app_d:"Menyu satridagi belgini bosing — katta oyna oçiladi. Bölimlarni bosib köring.",
+ pg_ov:"Bugun",pg_map:"Agentlar sxemasi",pg_sav:"Tejaş",pg_his:"Tarix",pg_off:"Ofis",
+vid_h:"Bir daqiqaga yetmay hammasini köring",vid_d:"Qisqa taniştiruv: limit, agentlar xaritasi, tejaş va bildirişnomalar. Video ingliz tilida.",vid_btn:"Videoni köriş",vid_aria:"Token Kuzatuv taniştiruv videosi, ingliz tilida, 39 soniya",live_t:"Haqiqiy yozuv",live_d:"Documents sessiyasi: agentlar xaritasi, Tejaş oynasi va Bugun sahifasi. Ovozsiz, 1,5× tezlikda.",live_aria:"Ilovadan ekran yozuvi: sessiya xaritasi, tejaş oynasi va Bugun sahifasi",live_play:"Videoni qöyiş",live_pause:"Videoni töxtatiş",
+ shot_cap:"Ilovaning haqiqiy oynalari, muallifning Mac’idan olingan.",alt_map:"Token Kuzatuv: sessiya sxemasi — sörov, asosiy agent, asboblar va natija",alt_panel:"Menyu satri paneli: 5 soatlik va haftalik limit, qayerga ketgani va başorat",alt_bugun:"Bugun sahifasi: Claude limiti halqalari va başorat",alt_tarix:"Tarix sahifasi: 30 kunlik grafik, tarkib va jadval",alt_ofis:"Ofis: agentlar robot bölib işlaydigan 3D bino",alt_cloud:"5 soatlik limit qayerga ketdi: Mac’da, çat va bulutda, kuzatuvdan oldin",
+ ov_now:"HOZIR",ov_now_t:"sayr-web — asosiy agent fayllarni öqiyapti",
+ ov_m1:"Bugun",ov_m1e:"keçagidan +12%",ov_m2:"Faol vaqt",ov_m2v:"3 soat 40 daq",ov_m3:"Sessiyalar",ov_m3v:"7",ov_m3e:"2 tasi işlayapti",ov_m4:"Tezlik",
+ ov_chart:"Soatlar böyiça token tarkibi",lg1:"Keş öqiş",lg2:"Keş yoziş",lg3:"Kiritiş",lg4:"Javob",
+ sv_pg:"Loyihalar · 7 kun",his_h:"Oxirgi 30 kun",his_c1:"Kun",his_c2:"Token",his_c3:"Eng köp",his_csv:"CSV eksport",
  his_rows:[["10-noyabr","1,12M","sayr-web"],["9-noyabr","0,94M","shop-api"],["8-noyabr","1,41M","tokenkuzat"]],
  feat_h:"Kerakli paytda — kerakli xabar",
- f_not_t:"O‘z vaqtida xabar",f_not_d:"Ish tugadi, qadam osilib qoldi, Claude ruxsat kutyapti yoki ketma-ket xato — darhol bildirishnoma. Bosing — o‘sha sessiya xaritada ochiladi.",
- f_lim_t:"Haqiqiy limit va bashorat",f_lim_d:"5 soatlik va haftalik limit, qachon tiklanishi va shu sur’atda qachon tugashi. 80% va 95% da ogohlantiradi.",
- f_mcp_t:"Claude’dan so‘rang",f_mcp_d:"Plagin Claude’ga sarf asboblarini beradi: «bugun qancha token ketdi?», «limitim qancha qoldi?» — javob shu suhbatning o‘zida.",
- f_cl_t:"Chat va bulut ulushi",f_cl_d:"claude.ai chatlari Mac’ga yozilmaydi, lekin limitni yeydi. Ilova limit o‘sishini Mac’dagi sarf bilan solishtirib, ularning taxminiy ulushini ko‘rsatadi.",
- cl1:"Mac’da",cl2:"Chat va bulut",cl3:"Aniqlanmoqda",
- f_off_d:"Loyihalar — xona, agentlar — robot: kim ishlayapti, kim ruxsat kutib qo‘l silkitayapti, kim divanda dam olyapti. Robotni bosing — sessiya xaritada ochiladi.",
- fc_now:"hozir",fc_reset:"tiklanish 16:40",fc_lbl:"shu sur’atda",
- sv_h:"Isrofning sababi bor — tuzatishi ham",sv_d:"Tejash sahifasi har loyihada token qayerda behuda ketganini topadi. Raqam o‘lchanganmi yoki taxminmi — har doim belgilab qo‘yiladi.",
+ f_not_t:"Öz vaqtida xabar",f_not_d:"Iş tugadi, qadam osilib qoldi, Claude ruxsat kutyapti yoki ketma-ket xato — darhol bildirişnoma. Bosing — öşa sessiya xaritada oçiladi.",
+ f_lim_t:"Haqiqiy limit va başorat",f_lim_d:"5 soatlik va haftalik limit, qaçon tiklanişi va şu sur’atda qaçon tugaşi. 80% va 95% da ogohlantiradi.",
+ f_mcp_t:"Claude’dan sörang",f_mcp_d:"Plagin Claude’ga sarf asboblarini beradi: «bugun qança token ketdi?», «limitim qança qoldi?» — javob şu suhbatning özida.",
+ f_cl_t:"Çat va bulut uluşi",f_cl_d:"claude.ai çatlari Mac’ga yozilmaydi, lekin limitni yeydi. Ilova limit ösişini Mac’dagi sarf bilan soliştirib, ularning taxminiy uluşini körsatadi.",
+ cl1:"Mac’da",cl2:"Çat va bulut",cl3:"Aniqlanmoqda",
+ f_off_d:"Loyihalar — xona, agentlar — robot: kim işlayapti, kim ruxsat kutib qöl silkitayapti, kim divanda dam olyapti. Robotni bosing — sessiya xaritada oçiladi.",
+ fc_now:"hozir",fc_reset:"tiklaniş 16:40",fc_lbl:"şu sur’atda",
+ sv_h:"Isrofning sababi bor — tuzatişi ham",sv_d:"Tejaş sahifasi har loyihada token qayerda behuda ketganini topadi. Raqam ölçanganmi yoki taxminmi — har doim belgilab qöyiladi.",
  sv_num:"shop-api’da 7 kunda, taxminan",
- cz:[["Takroriy o‘qish","Bitta fayl qayta-qayta o‘qilgan","~38K"],["Katta kontekst","Kontekst 150K dan oshib, har javob qimmatlashgan","~29K"],["Skrinshotlar","Har biri ~1,5K token","~11K"],["Sovigan kesh","Tanaffusdan keyin kesh qayta yozilgan · o‘lchangan","~6K"]],
- op_found:"shop-api: 2 ta tuzatish taklif qilinadi",op_1:"CLAUDE.md ga qoida: katta fayllarni qismlab o‘qish",op_2:"Ishlatilmayotgan MCP serverni o‘chirish",op_q:"Qo‘llaymi? (ha/yo‘q)",op_y:"ha",op_ok:"✓ Qo‘llandi. Keyingi sessiyadan kuchga kiradi.",
- sv_note:"Tejash uchun modelni yoki javob sifatini pasaytirish shart emas.",
- priv_h:"Hammasi Mac’ingizda qoladi",priv_d:"Token Kuzatuv faqat diskdagi <code class='in'>~/.claude/projects</code> fayllarini o‘qiydi. Hisob ochish shart emas, serverimiz yo‘q.",
- priv_1:"Transkriptlar, kod va so‘rovlaringiz hech qayerga yuborilmaydi.",priv_4:"Kod ochiq — har bir qatorni o‘zingiz tekshira olasiz.",
- pd_mac:"Sizning Mac’ingiz",pd_no:"Transkript, kod, so‘rovlar",pd_no2:"tashqariga chiqmaydi",
- pd_a:"Haqiqiy limit foizi uchun, Claude Code’ning o‘z kaliti bilan",pd_b:"Kuniga 1 marta ochiq reliz ma’lumoti — yangilanish uchun",pd_opt:"ixtiyoriy",pd_off:"o‘chiriladi",
- inst_h:"Uch yo‘l, bir daqiqa",tab_dmg:"Tayyor ilova",tab_cc:"Claude Code orqali",tab_src:"Koddan yig‘ish",
+ cz:[["Takroriy öqiş","Bitta fayl qayta-qayta öqilgan","~38K"],["Katta kontekst","Kontekst 150K dan oşib, har javob qimmatlaşgan","~29K"],["Skrinşotlar","Har biri ~1,5K token","~11K"],["Sovigan keş","Tanaffusdan keyin keş qayta yozilgan · ölçangan","~6K"]],
+ op_found:"shop-api: 2 ta tuzatiş taklif qilinadi",op_1:"CLAUDE.md ga qoida: katta fayllarni qismlab öqiş",op_2:"Işlatilmayotgan MCP serverni öçiriş",op_q:"Qöllaymi? (ha/yöq)",op_y:"ha",op_ok:"✓ Qöllandi. Keyingi sessiyadan kuçga kiradi.",
+ sv_note:"Tejaş uçun modelni yoki javob sifatini pasaytiriş şart emas.",
+ priv_h:"Hammasi Mac’ingizda qoladi",priv_d:"Token Kuzatuv faqat diskdagi <code class='in'>~/.claude/projects</code> fayllarini öqiydi. Hisob oçiş şart emas, serverimiz yöq.",
+ priv_1:"Transkriptlar, kod va sörovlaringiz heç qayerga yuborilmaydi.",priv_4:"Kod oçiq — har bir qatorni özingiz tekşira olasiz.",
+ pd_mac:"Sizning Mac’ingiz",pd_no:"Transkript, kod, sörovlar",pd_no2:"taşqariga çiqmaydi",
+ pd_a:"Haqiqiy limit foizi uçun, Claude Code’ning öz kaliti bilan",pd_b:"Kuniga 1 marta oçiq reliz ma’lumoti — yangilaniş uçun",pd_opt:"ixtiyoriy",pd_off:"öçiriladi",
+ inst_h:"Uç yöl, bir daqiqa",tab_dmg:"Tayyor ilova",tab_cc:"Claude Code orqali",tab_src:"Koddan yiğiş",
  dmg_1:"<a href='"+"https://github.com/aliumirovux/TokenKuzat/releases/latest"+"' style='text-decoration:underline;text-underline-offset:3px'>Releases</a> sahifasidan .dmg faylni yuklab oling va Token Kuzatuv’ni Applications papkasiga sudrang.",
- dmg_2:"Ilova hali Apple Developer ID bilan imzolanmagan, shuning uchun birinchi ochishda macOS uni to‘xtatadi.",
- dmg_3:"System Settings → Privacy & Security → «Open Anyway». Yoki Terminal’da:",dmg_note:"Shundan keyin ilova yangi versiyani o‘zi tekshiradi va bir bosishda yangilanadi.",
- cc_d:"Claude Code’da shu ikki qatorni yozing. Claude talablarni tekshiradi, ilovani yig‘adi, o‘rnatadi va ochadi.",cc_note:"Plagin MCP asboblari, /tokenkuzat:optimize buyrug‘i va «Ofis» panelini ham qo‘shadi.",
- src_d:"Loyiha papkasida yurgizing — ilova ~/Applications’ga o‘rnatiladi va o‘zi ochiladi.",src_note:"Talab: macOS 13+, Xcode yoki Command Line Tools.",
- faq_h:"Ko‘p so‘raladigan savollar",
- q1:"Pullikmi?",a1:"Yo‘q. Token Kuzatuv bepul va kodi ochiq.",
- q2:"claude.ai chatlarini ham ko‘radimi?",a2:"Qadamlarini — yo‘q: chat va bulutdagi sessiyalar Mac diskiga yozilmaydi. Lekin ilova limit o‘sishidan ularning taxminiy ulushini ko‘rsatadi. Chat yozuvini .jsonl qilib qo‘shsangiz, u xaritada to‘liq ko‘rinadi.",
- q3:"Raqamlar qanchalik aniq?",a3:"Token sonlari transkriptdan o‘lchanadi. «Vaznli» hisob va isrof esa taxmin: Anthropic limitni qanday hisoblashini e’lon qilmaydi. Ilova har raqam yonida — o‘lchanganmi yoki taxminmi — belgilab qo‘yadi.",
- q4:"Nega macOS «ochib bo‘lmaydi» deydi?",a4:"Ilova test bosqichida va Apple Developer ID bilan imzolanmagan. Bir marta «Open Anyway» bosilsa, keyin odatdagidek ochiladi.",
- q5:"Qaysi tillarda ishlaydi?",a5:"O‘zbekcha va English. Sukut bo‘yicha Mac tiliga qarab tanlanadi.",
- end_h:"Tokenlaringizni ko‘rib ishlang",end_d:"Bepul, ochiq kod, bir daqiqada o‘rnatiladi.",foot_by:"Muallif",foot_ch:"O‘zgarishlar",foot_rel:"Relizlar",
- mb_app:"Terminal",mb_m:["Shell","Tahrir","Ko‘rinish"],mb_time:"Chor 14:32",
- p_today:"Bugun",p_tokens:"token",p_rate:"/daq",p_now:"HOZIR ISHLAYAPTI",p_think:"O‘ylayapti…",p_5h:"5 soat",p_week:"Hafta",p_pace:"Sur’at me’yorida — limit tiklanguncha yetadi",p_60:"Oxirgi 60 daqiqa",p_now2:"hozir",
- p_working:"ishlayapti",p_waiting:"javobingiz kutilyapti",p_done:"tugadi",
- m_title:"Agentlar sxemasi",m_req:"So‘rov 3 / 5",m_prompt:"SO‘ROV",m_prompt_t:"“Narx filtrini qo‘sh”",m_main:"ASOSIY AGENT",m_main_s:"23 qadam · 184K",
- m_files:"Fayllar",m_term:"Terminal",m_web:"Internet",m_helper:"Izlovchi · Haiku",m_helper_s:"6 qadam",
- m_out:"Chiqish",m_in:"Kirish",m_det:"Tafsilot",m_rows:"Natija",m_ctx:"Kontekstga",m_time:"Vaqt",
- steps:[["Read","src/pages/Search.tsx","412 qator","+3,1K","0,4 s"],["Bash","npm run build","38 qator","+2,8K","12,6 s"],["WebFetch","docs.vite.dev/guide","1 sahifa","+4,0K","2,1 s"],["Task","Izlovchi · Haiku","6 qadam","+5,6K","41 s"]],
- s_title:"TOKENNI TEJASH · SHOP-API",s_total:"Jami sarf",s_waste:"Isrof",s_r1:"Takroriy o‘qish",s_r2:"Katta kontekst",s_r3:"Skrinshotlar",s_r4:"Sovigan kesh",s_btn:"Claude’ga topshirish",s_est:"taxminiy",s_meas:"o‘lchangan",
- t_app:"TOKEN KUZATUV",t_title:"Claude ishni tugatdi",t_body:"scratch-2026-10-30 · 2 soat 0 daq · 2 qadam — javobingizni kutyapti",
- t2_title:"Ruxsat kutilyapti",t2_body:"shop-api · Bash buyrug‘i 1,5 daqiqadan beri tasdiq kutyapti",t2_ago:"2 daq",
- r_5h:"5 soatlik limit",r_wk:"Haftalik limit",r_reset:"↻ 16:40",r_reset2:"↻ Dush 09:00",
- o_work:"ishlayapti",o_wait:"ruxsat kutyapti",o_rest:"dam olyapti",
- c_q:"Bugun qancha token ketdi?",c_a:"Bugun <b>1,28M</b> token. Eng ko‘pi sayr-web’da — 612K (48%). 5 soatlik limitning 34% i ishlatildi, 16:40 da tiklanadi."
+ dmg_2:"Ilova hali Apple Developer ID bilan imzolanmagan, şuning uçun birinçi oçişda macOS uni töxtatadi.",
+ dmg_3:"System Settings → Privacy & Security → «Open Anyway». Yoki Terminal’da:",dmg_note:"Şundan keyin ilova yangi versiyani özi tekşiradi va bir bosişda yangilanadi.",
+ cc_d:"Claude Code’da şu ikki qatorni yozing. Claude talablarni tekşiradi, ilovani yiğadi, örnatadi va oçadi.",cc_note:"Plagin MCP asboblari, /tokenkuzat:optimize buyruği va «Ofis» panelini ham qöşadi.",
+ src_d:"Loyiha papkasida yurgizing — ilova ~/Applications’ga örnatiladi va özi oçiladi.",src_note:"Talab: macOS 13+, Xcode yoki Command Line Tools.",
+ faq_h:"Köp söraladigan savollar",
+ q1:"Pullikmi?",a1:"Yöq. Token Kuzatuv bepul va kodi oçiq.",
+ q2:"claude.ai çatlarini ham köradimi?",a2:"Qadamlarini — yöq: çat va bulutdagi sessiyalar Mac diskiga yozilmaydi. Lekin ilova limit ösişidan ularning taxminiy uluşini körsatadi. Çat yozuvini .jsonl qilib qöşsangiz, u xaritada töliq körinadi.",
+ q3:"Raqamlar qançalik aniq?",a3:"Token sonlari transkriptdan ölçanadi. «Vaznli» hisob va isrof esa taxmin: Anthropic limitni qanday hisoblaşini e’lon qilmaydi. Ilova har raqam yonida — ölçanganmi yoki taxminmi — belgilab qöyadi.",
+ q4:"Nega macOS «oçib bölmaydi» deydi?",a4:"Ilova test bosqiçida va Apple Developer ID bilan imzolanmagan. Bir marta «Open Anyway» bosilsa, keyin odatdagidek oçiladi.",
+ q5:"Qaysi tillarda işlaydi?",a5:"Özbekça va English. Sukut böyiça Mac tiliga qarab tanlanadi.",
+ end_h:"Tokenlaringizni körib işlang",end_d:"Bepul, oçiq kod, bir daqiqada örnatiladi.",foot_by:"Muallif",foot_ch:"Özgarişlar",foot_rel:"Relizlar",
+ mb_app:"Terminal",mb_m:["Shell","Tahrir","Köriniş"],mb_time:"Çor 14:32",
+ p_today:"Bugun",p_tokens:"token",p_rate:"/daq",p_now:"HOZIR IŞLAYAPTI",p_think:"Öylayapti…",p_5h:"5 soat",p_week:"Hafta",p_pace:"Sur’at me’yorida — limit tiklangunça yetadi",p_60:"Oxirgi 60 daqiqa",p_now2:"hozir",
+ p_working:"işlayapti",p_waiting:"javobingiz kutilyapti",p_done:"tugadi",
+ m_title:"Agentlar sxemasi",m_req:"Sörov 3 / 5",m_prompt:"SÖROV",m_prompt_t:"“Narx filtrini qöş”",m_main:"ASOSIY AGENT",m_main_s:"23 qadam · 184K",
+ m_files:"Fayllar",m_term:"Terminal",m_web:"Internet",m_helper:"Izlovçi · Haiku",m_helper_s:"6 qadam",
+ m_out:"Çiqiş",m_in:"Kiriş",m_det:"Tafsilot",m_rows:"Natija",m_ctx:"Kontekstga",m_time:"Vaqt",
+ steps:[["Read","src/pages/Search.tsx","412 qator","+3,1K","0,4 s"],["Bash","npm run build","38 qator","+2,8K","12,6 s"],["WebFetch","docs.vite.dev/guide","1 sahifa","+4,0K","2,1 s"],["Task","Izlovçi · Haiku","6 qadam","+5,6K","41 s"]],
+ s_title:"TOKENNI TEJAŞ · SHOP-API",s_total:"Jami sarf",s_waste:"Isrof",s_r1:"Takroriy öqiş",s_r2:"Katta kontekst",s_r3:"Skrinşotlar",s_r4:"Sovigan keş",s_btn:"Claude’ga topşiriş",s_est:"taxminiy",s_meas:"ölçangan",
+ t_app:"TOKEN KUZATUV",t_title:"Claude işni tugatdi",t_body:"scratch-2026-10-30 · 2 soat 0 daq · 2 qadam — javobingizni kutyapti",
+ t2_title:"Ruxsat kutilyapti",t2_body:"shop-api · Bash buyruği 1,5 daqiqadan beri tasdiq kutyapti",t2_ago:"2 daq",
+ r_5h:"5 soatlik limit",r_wk:"Haftalik limit",r_reset:"↻ 16:40",r_reset2:"↻ Duş 09:00",
+ o_work:"işlayapti",o_wait:"ruxsat kutyapti",o_rest:"dam olyapti",
+ c_q:"Bugun qança token ketdi?",c_a:"Bugun <b>1,28M</b> token. Eng köpi sayr-web’da — 612K (48%). 5 soatlik limitning 34% i işlatildi, 16:40 da tiklanadi."
 },
 en:{
  nav_menu:"Open menu",nav_close:"Close menu",dd_nul:"",dd_ov:"Limits, live activity and today’s spend",dd_map:"Every session as an agent map",dd_his:"By day and by project",dd_off:"Your agents at work in an office",dd_go_app:"See inside the app",dd_go_sav:"How savings work",dd_go_priv:"Privacy in detail",dd_go_inst:"All install options",dd_mac:"Only on your Mac",dd_plug:"Install the Claude Code plugin",dd_dmg:".dmg · macOS 13+",dd_ms_app:"4 windows: Today, map, history, office",dd_ms_sav:"Why tokens are wasted and the fix",dd_ms_priv:"Your data never leaves your Mac",dd_ms_inst:".dmg or the Claude Code plugin",pk_btn:"Peek inside",pk_cap:"This is exactly the panel you get when you click the menu bar icon.",ck_ph:"Jump to…",ck_in:"Type a section or action…",ck_sec:"Sections",ck_act:"Actions",ck_none:"No matches",ck_copy:"Copy the plugin command",ck_gh:"Open on GitHub",ck_lang:"O‘zbekchaga o‘tish",ck_hint:"↑↓ select · ↵ open · esc close",ck_aria:"Command menu",nav_app:"Inside",nav_sav:"Savings",nav_priv:"Privacy",nav_inst:"Install",nav_faq:"FAQ",nav_dl:"Download",nav_feat:"Features",
