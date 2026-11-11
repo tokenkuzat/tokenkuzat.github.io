@@ -19,16 +19,22 @@
 <style>
 @font-face{font-family:Geist;font-style:normal;font-weight:400;font-display:swap;src:url(fonts/geist-latin-400-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
 @font-face{font-family:Geist;font-style:normal;font-weight:400;font-display:swap;src:url(fonts/geist-latin-ext-400-normal.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:Geist;font-style:normal;font-weight:400;font-display:swap;src:url(fonts/geist-cyrillic-400-normal.woff2) format("woff2");unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
 @font-face{font-family:Geist;font-style:normal;font-weight:500;font-display:swap;src:url(fonts/geist-latin-500-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
 @font-face{font-family:Geist;font-style:normal;font-weight:500;font-display:swap;src:url(fonts/geist-latin-ext-500-normal.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:Geist;font-style:normal;font-weight:500;font-display:swap;src:url(fonts/geist-cyrillic-500-normal.woff2) format("woff2");unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
 @font-face{font-family:Geist;font-style:normal;font-weight:600;font-display:swap;src:url(fonts/geist-latin-600-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
 @font-face{font-family:Geist;font-style:normal;font-weight:600;font-display:swap;src:url(fonts/geist-latin-ext-600-normal.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:Geist;font-style:normal;font-weight:600;font-display:swap;src:url(fonts/geist-cyrillic-600-normal.woff2) format("woff2");unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
 @font-face{font-family:Geist;font-style:normal;font-weight:700;font-display:swap;src:url(fonts/geist-latin-700-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
 @font-face{font-family:Geist;font-style:normal;font-weight:700;font-display:swap;src:url(fonts/geist-latin-ext-700-normal.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:Geist;font-style:normal;font-weight:700;font-display:swap;src:url(fonts/geist-cyrillic-700-normal.woff2) format("woff2");unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
 @font-face{font-family:"Geist Mono";font-style:normal;font-weight:400;font-display:swap;src:url(fonts/geist-mono-latin-400-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
 @font-face{font-family:"Geist Mono";font-style:normal;font-weight:400;font-display:swap;src:url(fonts/geist-mono-latin-ext-400-normal.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Geist Mono";font-style:normal;font-weight:400;font-display:swap;src:url(fonts/geist-mono-cyrillic-400-normal.woff2) format("woff2");unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
 @font-face{font-family:"Geist Mono";font-style:normal;font-weight:500;font-display:swap;src:url(fonts/geist-mono-latin-500-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
 @font-face{font-family:"Geist Mono";font-style:normal;font-weight:500;font-display:swap;src:url(fonts/geist-mono-latin-ext-500-normal.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Geist Mono";font-style:normal;font-weight:500;font-display:swap;src:url(fonts/geist-mono-cyrillic-500-normal.woff2) format("woff2");unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
 :root{--ease:cubic-bezier(.32,.72,0,1);--ease-out:cubic-bezier(.16,1,.3,1);--acc:#6C5CE7;
   --t-cache:#6C5CE7;--t-fresh:#0E9F8E;--t-input:#B04FD8;--t-out:#E0731C;--t-agents:#2F7BE5;--rv-h:0px;
   --ink:#17152B;--muted:#55536B;--teal:#2F7D84;--indigo:#2B3473;--sun:#FFC850}
@@ -497,6 +503,7 @@ code.in{font-size:.92em;background:#EEEDF3;padding:1px 6px;border-radius:6px}
 
 /* install */
 .ins{display:grid;grid-template-columns:1.3fr .7fr;gap:16px}
+.ins>*{min-width:0}
 .ins .core{padding:32px}
 .tabs{background:#F0EFF5}
 .tabs button{color:var(--muted)}
@@ -764,7 +771,7 @@ const T={
 uz:{
  nav_menu:"Menyuni oçiş",nav_close:"Menyuni yopiş",dd_nul:"",dd_ov:"Limit, jonli faollik va bugungi sarf",dd_map:"Har sessiya agentlar xaritasi sifatida",dd_his:"Kunlar va loyihalar kesimida",dd_off:"Agentlaringiz ofisda işlayotgani",dd_go_app:"Ilova içini köriş",dd_go_sav:"Tejaş qanday işlaydi",dd_go_priv:"Maxfiylik haqida batafsil",dd_go_inst:"Barça örnatiş usullari",dd_mac:"Faqat Mac’ingizda",dd_plug:"Claude Code plaginini örnatiş",dd_dmg:".dmg · macOS 13+",dd_ms_app:"4 oyna: Bugun, xarita, tarix, ofis",dd_ms_sav:"Isrof sababi va tuzatiş",dd_ms_priv:"Ma’lumot Mac’dan çiqmaydi",dd_ms_inst:".dmg yoki Claude Code plagini",pk_btn:"Ilovani köring",pk_cap:"Menyu satridagi belgini bosganingizda aynan şu panel oçiladi.",ck_ph:"Qayerga ötamiz?",ck_in:"Bölim yoki amalni yozing…",ck_sec:"Bölimlar",ck_act:"Amallar",ck_none:"Heç narsa topilmadi",ck_copy:"Plagin buyruğini nusxalaş",ck_gh:"GitHub’da oçiş",ck_lang:"Switch to English",ck_hint:"↑↓ tanlaş · ↵ oçiş · esc yopiş",ck_aria:"Buyruqlar paneli",nav_app:"Ilova içi",nav_sav:"Tejaş",nav_priv:"Maxfiylik",nav_inst:"Örnatiş",nav_faq:"Savollar",nav_dl:"Yuklab oliş",nav_feat:"Imkoniyatlar",
 
- h1:"Tokenlaringiz qayerga ketyapti — <span class='g'>endi körinadi</span>",
+ h1:"Tokenlaringiz qayerga ketayotgani <span class='g'>endi körinadi</span>",
  sub:"Token Kuzatuv Mac menyu satrida turadi va jonli körsatadi: qaysi agent işlayapti, nimani öqiyapti, qança token ketdi va limit qaçon tugaydi.",
  cta_dl:"macOS uçun yuklab oliş",cta_copy:"Nusxalandi",fine:"Bepul · Oçiq kod · macOS 13+ · Apple Silicon va Intel",ver:"Sönggi versiya",
  an1:"menyu satrida qolgan limit",an2:"5 soat va hafta limiti",an3:"şu sur’atda qaçon tugaydi",an4:"sessiya sxemasi va tokenlar",
@@ -892,11 +899,77 @@ vid_h:"See it all in under a minute",vid_d:"A short tour: limits, the agent map,
  r_5h:"5-hour limit",r_wk:"Weekly limit",r_reset:"↻ 16:40",r_reset2:"↻ Mon 09:00",
  o_work:"working",o_wait:"needs permission",o_rest:"resting",
  c_q:"How many tokens did I use today?",c_a:"<b>1.28M</b> tokens today. Most went to sayr-web — 612K (48%). 34% of your 5-hour limit is used; it resets at 16:40."
+},
+ru:{
+ nav_menu:"Открыть меню",nav_close:"Закрыть меню",dd_nul:"",dd_ov:"Лимиты, живая активность и расход за сегодня",dd_map:"Каждая сессия — карта агентов",dd_his:"По дням и по проектам",dd_off:"Ваши агенты за работой в офисе",dd_go_app:"Посмотреть приложение",dd_go_sav:"Как работает экономия",dd_go_priv:"Подробнее о приватности",dd_go_inst:"Все способы установки",dd_mac:"Только на вашем Mac",dd_plug:"Установить плагин Claude Code",dd_dmg:".dmg · macOS 13+",dd_ms_app:"4 окна: Сегодня, карта, история, офис",dd_ms_sav:"Почему токены уходят впустую и как это исправить",dd_ms_priv:"Данные не покидают ваш Mac",dd_ms_inst:".dmg или плагин Claude Code",pk_btn:"Заглянуть внутрь",pk_cap:"Именно эта панель открывается, когда вы нажимаете на значок в строке меню.",ck_ph:"Куда перейти?",ck_in:"Введите раздел или действие…",ck_sec:"Разделы",ck_act:"Действия",ck_none:"Ничего не найдено",ck_copy:"Скопировать команду плагина",ck_gh:"Открыть на GitHub",ck_lang:"Switch to English",ck_hint:"↑↓ выбрать · ↵ открыть · esc закрыть",ck_aria:"Меню команд",nav_app:"Внутри",nav_sav:"Экономия",nav_priv:"Приватность",nav_inst:"Установка",nav_faq:"Вопросы",nav_dl:"Скачать",nav_feat:"Возможности",
+
+ h1:"Смотрите, куда уходят <span class='g'>ваши токены</span>",
+ sub:"Token Kuzatuv живёт в строке меню Mac и показывает в реальном времени: какой агент работает, что он читает, сколько токенов ушло и когда закончится лимит.",
+ cta_dl:"Скачать для macOS",cta_copy:"Скопировано",fine:"Бесплатно · Открытый код · macOS 13+ · Apple Silicon и Intel",ver:"Последняя версия",
+ an1:"остаток лимита в строке меню",an2:"5-часовой и недельный лимит",an3:"когда закончится при таком темпе",an4:"карта сессии и токены",
+ pf1_b:"1 секунда",pf1:"— так быстро читаются новые строки",pf2_b:"30 дней",pf2:"транскриптов отслеживается, история хранится дольше",pf3:"аккаунтов, серверов и подписок не нужно",pf4_b:"4 вида",pf4:"уведомлений: готово, застрял, ошибки, лимит",
+ diff_a:"Процент лимита показывают многие приложения.",diff_b:"Token Kuzatuv показывает причину.",
+hw_h:"Три шага, никаких настроек",
+ hw1_t:"Claude Code записывает",hw1_d:"Каждый ответ и вызов инструмента попадает в .jsonl-файл в <code class='in'>~/.claude/projects</code> — Claude Code делает это сам.",
+ hw2_t:"Token Kuzatuv читает",hw2_d:"Только новые строки, каждую секунду. Ответ, разбитый на несколько строк, всё равно считается один раз.",hw2_c:"считается один раз",
+ hw3_t:"Вы видите",hw3_d:"Строка меню, карта, экономия и уведомления — всё из этих данных, не покидая ваш Mac.",
+ app_h:"Вся картина в одном окне",app_d:"Нажмите на значок в строке меню — откроется главное окно. Пощёлкайте по разделам.",
+ pg_ov:"Сегодня",pg_map:"Карта сессии",pg_sav:"Экономия",pg_his:"История",pg_off:"Офис",
+vid_h:"Всё самое главное меньше чем за минуту",vid_d:"Короткий обзор: лимиты, карта агентов, экономия и уведомления. Видео на английском.",vid_btn:"Смотреть видео",vid_aria:"Видео о Token Kuzatuv на английском, 39 секунд",live_t:"Настоящая запись",live_d:"Сессия Documents: карта агентов, окно экономии и страница «Сегодня». Без звука, ускорено в 1,5 раза, интерфейс на узбекском.",live_aria:"Запись экрана приложения: карта сессии, окно экономии и страница «Сегодня»",live_play:"Включить видео",live_pause:"Остановить видео",
+ shot_cap:"Настоящие окна приложения, снятые на Mac автора.",alt_map:"Карта сессии Token Kuzatuv: запрос, главный агент, инструменты и результат",alt_panel:"Панель строки меню: 5-часовой и недельный лимит, куда он ушёл и прогноз",alt_bugun:"Страница «Сегодня»: кольца лимита Claude и прогноз",alt_tarix:"Страница «История»: график за 30 дней, разбивка и таблица",alt_ofis:"Офис: 3D-здание, где агенты работают роботами",alt_cloud:"Куда ушёл 5-часовой лимит: на этом Mac, в чате и облаке, до начала отслеживания",
+ ov_now:"СЕЙЧАС",ov_now_t:"sayr-web — главный агент читает файлы",
+ ov_m1:"Сегодня",ov_m1e:"+12% к вчера",ov_m2:"Активное время",ov_m2v:"3 ч 40 мин",ov_m3:"Сессии",ov_m3v:"7",ov_m3e:"2 работают",ov_m4:"Темп",
+ ov_chart:"Состав токенов по часам",lg1:"Чтение кэша",lg2:"Запись кэша",lg3:"Ввод",lg4:"Вывод",
+ sv_pg:"Проекты · 7 дней",his_h:"Последние 30 дней",his_c1:"День",his_c2:"Токены",his_c3:"Главный проект",his_csv:"Экспорт CSV",
+ his_rows:[["10 ноя","1,12M","sayr-web"],["9 ноя","0,94M","shop-api"],["8 ноя","1,41M","tokenkuzat"]],
+ feat_h:"Нужное уведомление в нужный момент",
+ f_not_t:"Сообщит вовремя",f_not_d:"Задача готова, шаг завис, Claude ждёт разрешения или ошибки повторяются — придёт уведомление. Нажмите — сессия откроется на карте.",
+ f_lim_t:"Настоящий лимит и прогноз",f_lim_d:"5-часовой и недельный лимит, когда каждый обновится и когда закончится при таком темпе. Предупредит на 80% и 95%.",
+ f_mcp_t:"Спросите Claude",f_mcp_d:"Плагин даёт Claude инструменты расхода: «сколько токенов ушло сегодня?», «сколько осталось от лимита?» — ответ прямо в чате.",
+ f_cl_t:"Доля чата и облака",f_cl_d:"Чаты claude.ai не записываются на Mac, но расходуют лимит. Приложение сравнивает рост лимита с расходом на Mac и оценивает их долю.",
+ cl1:"На этом Mac",cl2:"Чат и облако",cl3:"Измеряется",
+ f_off_d:"Проекты — комнаты, агенты — роботы: кто работает, кто машет, прося разрешения, кто отдыхает на диване. Нажмите на робота — его сессия откроется на карте.",
+ fc_now:"сейчас",fc_reset:"обновится в 16:40",fc_lbl:"при таком темпе",
+ sv_h:"У потерь есть причина — и решение",sv_d:"Экономия находит, где каждый проект тратил токены впустую. Каждая цифра помечена: измерено или оценка.",
+ sv_num:"в shop-api за 7 дней, оценка",
+ cz:[["Повторное чтение","Один и тот же файл читается снова и снова","~38K"],["Большой контекст","Контекст больше 150K — каждый ответ дороже","~29K"],["Скриншоты","Около 1,5K токенов каждый","~11K"],["Холодный кэш","Кэш перезаписан после паузы · измерено","~6K"]],
+ op_found:"shop-api: предложено 2 исправления",op_1:"Правило в CLAUDE.md: читать большие файлы частями",op_2:"Отключить неиспользуемый MCP-сервер",op_q:"Применить? (да/нет)",op_y:"да",op_ok:"✓ Применено. Заработает со следующей сессии.",
+ sv_note:"Экономия — это не слабее модель и не хуже ответы.",
+ priv_h:"Всё остаётся на вашем Mac",priv_d:"Token Kuzatuv читает только файлы <code class='in'>~/.claude/projects</code> на вашем диске. Ни аккаунта, ни нашего сервера.",
+ priv_1:"Ваши транскрипты, код и запросы никуда не отправляются.",priv_4:"Код открыт — проверьте каждую строку сами.",
+ pd_mac:"Ваш Mac",pd_no:"Транскрипты, код, запросы",pd_no2:"не покидают Mac",
+ pd_a:"Для настоящего % лимита — ключом самого Claude Code",pd_b:"Публичная информация о релизах раз в день — для обновлений",pd_opt:"по желанию",pd_off:"можно выключить",
+ inst_h:"Три способа, одна минута",tab_dmg:"Готовое приложение",tab_cc:"Через Claude Code",tab_src:"Сборка из исходников",
+ dmg_1:"Скачайте .dmg в <a href='https://github.com/aliumirovux/TokenKuzat/releases/latest' style='text-decoration:underline;text-underline-offset:3px'>Releases</a> и перетащите Token Kuzatuv в «Программы».",
+ dmg_2:"Приложение пока не подписано Apple Developer ID, поэтому macOS блокирует первый запуск.",
+ dmg_3:"Системные настройки → Конфиденциальность и безопасность → «Всё равно открыть». Или в Терминале:",dmg_note:"Дальше приложение само проверяет новые версии и обновляется в один клик.",
+ cc_d:"Введите эти две строки в Claude Code. Claude проверит требования, соберёт приложение, установит и откроет его.",cc_note:"Плагин также добавляет MCP-инструменты, команду /tokenkuzat:optimize и панель «Офис».",
+ src_d:"Запустите в папке репозитория — приложение установится в ~/Applications и откроется само.",src_note:"Нужны macOS 13+ и Xcode или Command Line Tools.",
+ faq_h:"Частые вопросы",
+ q1:"Это платно?",a1:"Нет. Token Kuzatuv бесплатный, с открытым кодом.",
+ q2:"Видит ли он чаты claude.ai?",a2:"Их шаги — нет: сессии чата и облака не записываются на диск Mac. Но приложение оценивает их долю по росту лимита. Добавьте транскрипт чата как .jsonl-файл — и он полностью появится на карте.",
+ q3:"Насколько точны цифры?",a3:"Количество токенов измеряется по транскриптам. Взвешенный счёт и потери — оценка: Anthropic не публикует, как именно считаются лимиты. Приложение помечает каждую цифру: измерено или оценка.",
+ q4:"Почему macOS говорит, что приложение нельзя открыть?",a4:"Приложение в тестовой фазе и не подписано Apple Developer ID. Один раз нажмите «Всё равно открыть» — дальше оно открывается как обычно.",
+ q5:"На каких языках?",a5:"Приложение — на английском и узбекском, по умолчанию на языке вашего Mac. Этот сайт есть и на русском.",
+ end_h:"Работайте, видя свои токены",end_d:"Бесплатно, с открытым кодом, установка за минуту.",foot_by:"Автор",foot_ch:"Изменения",foot_rel:"Релизы",
+ mb_app:"Терминал",mb_m:["Shell","Правка","Вид"],mb_time:"Ср 14:32",
+ p_today:"Сегодня",p_tokens:"токенов",p_rate:"/мин",p_now:"СЕЙЧАС РАБОТАЕТ",p_think:"Думает…",p_5h:"5 часов",p_week:"Неделя",p_pace:"Темп нормальный — лимита хватит до обновления",p_60:"Последние 60 минут",p_now2:"сейчас",
+ p_working:"работает",p_waiting:"ждёт вашего ответа",p_done:"готово",
+ m_title:"Карта сессии",m_req:"Запрос 3 / 5",m_prompt:"ЗАПРОС",m_prompt_t:"«Добавь фильтр по цене»",m_main:"ГЛАВНЫЙ АГЕНТ",m_main_s:"23 шага · 184K",
+ m_files:"Файлы",m_term:"Терминал",m_web:"Веб",m_helper:"Explorer · Haiku",m_helper_s:"6 шагов",
+ m_out:"Вывод",m_in:"Ввод",m_det:"Детали",m_rows:"Результат",m_ctx:"В контекст",m_time:"Время",
+ steps:[["Read","src/pages/Search.tsx","412 строк","+3,1K","0,4 с"],["Bash","npm run build","38 строк","+2,8K","12,6 с"],["WebFetch","docs.vite.dev/guide","1 страница","+4,0K","2,1 с"],["Task","Explorer · Haiku","6 шагов","+5,6K","41 с"]],
+ s_title:"ЭКОНОМИЯ ТОКЕНОВ · SHOP-API",s_total:"Общий расход",s_waste:"Потери",s_r1:"Повторное чтение",s_r2:"Большой контекст",s_r3:"Скриншоты",s_r4:"Холодный кэш",s_btn:"Передать Claude",s_est:"оценка",s_meas:"измерено",
+ t_app:"TOKEN KUZATUV",t_title:"Claude закончил задачу",t_body:"scratch-2026-10-30 · 2 ч 0 мин · 2 шага — ждёт вашего ответа",
+ t2_title:"Ждёт разрешения",t2_body:"shop-api · команда Bash ждёт одобрения 1,5 минуты",t2_ago:"2 мин",
+ r_5h:"5-часовой лимит",r_wk:"Недельный лимит",r_reset:"↻ 16:40",r_reset2:"↻ пн 09:00",
+ o_work:"работает",o_wait:"нужно разрешение",o_rest:"отдыхает",
+ c_q:"Сколько токенов я потратил сегодня?",c_a:"Сегодня <b>1,28M</b> токенов. Больше всего ушло на sayr-web — 612K (48%). Использовано 34% 5-часового лимита, обновится в 16:40."
 }};
 const IM={uz:{bugun:"img/uz-bugun.webp",xulosa:"img/uz-xulosa.webp",tarix:"img/uz-tarix.webp",ofis:"img/uz-ofis.webp",panel:"img/uz-panel.webp",cloud:"img/uz-cloud.webp"},
- en:{bugun:"img/en-bugun.webp",xulosa:"img/en-xulosa.webp",tarix:"img/en-tarix.webp",ofis:"img/uz-ofis.webp",panel:"img/en-panel.webp",cloud:"img/en-cloud.webp"}};
+ en:{bugun:"img/en-bugun.webp",xulosa:"img/en-xulosa.webp",tarix:"img/en-tarix.webp",ofis:"img/uz-ofis.webp",panel:"img/en-panel.webp",cloud:"img/en-cloud.webp"},ru:{bugun:"img/en-bugun.webp",xulosa:"img/en-xulosa.webp",tarix:"img/en-tarix.webp",ofis:"img/uz-ofis.webp",panel:"img/en-panel.webp",cloud:"img/en-cloud.webp"}};
 let L="uz";
-const n=v=>L==="uz"?String(v).replace(".",","):String(v);
+const n=v=>L!=="en"?String(v).replace(".",","):String(v);
 const t=k=>T[L][k]??k;
 function seeded(s){return()=>{s=(s*9301+49297)%233280;return s/233280}}
 let STEP=0;
@@ -965,14 +1038,14 @@ function render(){
  document.querySelectorAll("[data-aria]").forEach(el=>el.setAttribute("aria-label",t(el.dataset.aria)));
  if(window.lbLab)lbLab();
  document.querySelectorAll("[data-th]").forEach(el=>{el.innerHTML=t(el.dataset.th)});
- document.querySelectorAll("[data-lang]").forEach(el=>{el.innerHTML=["uz","en"].map(x=>`<button aria-pressed="${x===L}" data-setlang="${x}">${x.toUpperCase()}</button>`).join("")});
+ document.querySelectorAll("[data-lang]").forEach(el=>{el.innerHTML=["uz","ru","en"].map(x=>`<button aria-pressed="${x===L}" data-setlang="${x}">${x.toUpperCase()}</button>`).join("")});
  document.querySelectorAll("[data-ver]").forEach(el=>el.textContent=REL?` · ${t("ver")} ${REL.tag}`:"");
  if(REL)document.querySelectorAll("[data-dmg]").forEach(a=>a.href=REL.url);
  const ht=document.getElementById("heroToast");ht.innerHTML=TOGGLE?C.toast2():C.toast();
  paintStep(false);
 }
 function selectTab(root,name){root.querySelectorAll("[data-tab]").forEach(b=>b.setAttribute("aria-selected",b.dataset.tab===name));root.querySelectorAll("[data-pane]").forEach(p=>p.classList.toggle("on",p.dataset.pane===name))}
-try{L=localStorage.getItem("tk-lang")||((navigator.language||"").toLowerCase().startsWith("en")?"en":"uz")}catch(e){L=(navigator.language||"").toLowerCase().startsWith("en")?"en":"uz"}
+const navL=()=>{const l=(navigator.language||"").toLowerCase();return l.startsWith("ru")?"ru":l.startsWith("en")?"en":"uz"};try{L=localStorage.getItem("tk-lang")||navL();if(!T[L])L=navL()}catch(e){L=navL()}
 fetch("https://api.github.com/repos/aliumirovux/TokenKuzat/releases/latest").then(r=>r.ok?r.json():null).then(j=>{if(!j)return;const a=(j.assets||[]).find(x=>/\.dmg$/.test(x.name));REL={tag:j.tag_name,url:a?a.browser_download_url:j.html_url};render()}).catch(()=>{});
 
 /* live: step cycling across every map + panel */
