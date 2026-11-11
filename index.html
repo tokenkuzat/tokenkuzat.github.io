@@ -68,7 +68,6 @@ code,.mono{font-family:"Geist Mono",ui-monospace,monospace}
 @media (max-width:600px){#s-vid{padding-top:72px}.vplay{padding:5px 16px 5px 5px;gap:10px;font-size:14px}.vplay i{width:36px;height:36px}.vplay small{display:none}.lframe{border-radius:12px}.lbtn{right:10px;bottom:10px;width:36px;height:36px}}
 @media (prefers-reduced-motion:reduce){.rev{opacity:1;transform:none;filter:none;transition:none}*{animation:none!important;transition:none!important}}
 section{padding:120px 0;position:relative}
-.eyebrow{display:inline-flex;align-items:center;gap:8px;border-radius:99px;padding:5px 12px;font-size:11px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;background:#fff;color:#4E4C63;box-shadow:0 0 0 1px rgba(23,21,43,.07)}
 h1{font-size:clamp(42px,6.6vw,88px);line-height:.98;letter-spacing:-.045em;font-weight:600;text-wrap:balance}
 h2{font-size:clamp(32px,4vw,56px);letter-spacing:-.04em;line-height:1.02;font-weight:600;text-wrap:balance}
 .lead{font-size:clamp(17px,1.4vw,19px);line-height:1.6;color:var(--muted);text-wrap:pretty}
@@ -270,7 +269,7 @@ code.in{font-size:.92em;background:#EEEDF3;padding:1px 6px;border-radius:6px}
 
 /* ===== hero ===== */
 .hero{position:relative;text-align:center;padding:88px 0 0}
-.hero h1{max-width:15ch;margin:22px auto 0}
+.hero h1{max-width:15ch;margin:0 auto}
 .hero .lead{max-width:620px;margin:22px auto 0}
 .ctas{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:34px}
 .fine{margin-top:16px;font-size:13px;color:#6B6980}
@@ -473,7 +472,6 @@ footer a:hover{color:var(--ink)}
    ========================================================= */
 .t2{--bg:#F6F5F1}
 .t2 .hero{color:#fff;padding:0;margin-top:-60px;padding-top:150px;background:radial-gradient(70% 60% at 85% 10%,#4C7FA0,transparent 60%),radial-gradient(60% 60% at 0% 70%,#34298F,transparent 60%),linear-gradient(160deg,#256C73 0%,#1F4470 45%,#222A63 100%);border-radius:0 0 48px 48px;padding-bottom:0}
-.t2 .hero .eyebrow{background:rgba(255,255,255,.12);color:#fff;box-shadow:inset 0 0 0 1px rgba(255,255,255,.2)}
 .t2 .hero .lead{color:rgba(255,255,255,.84)}
 .t2 .hero .fine{color:rgba(255,255,255,.75)}
 .t2 .hero .pill.pri{background:#FFC850;color:#17152B}.t2 .hero .pill.pri .ci{background:rgba(23,21,43,.1)}
@@ -489,7 +487,6 @@ footer a:hover{color:var(--ink)}
 .t2 #s-sav{background:#FFF1DE;border-radius:48px;margin:24px 12px 0}
 .t2 #s-sav .causes,.t2 #s-sav .causes div{border-color:rgba(120,70,10,.18)}
 .t2 #s-priv{background:#123F46;color:#fff;border-radius:48px;margin:24px 12px 0;--muted:#B8D6D6}
-.t2 #s-priv .eyebrow{background:rgba(255,255,255,.1);color:#fff;box-shadow:inset 0 0 0 1px rgba(255,255,255,.2)}
 .t2 #s-priv li{color:#DCEDEC}.t2 #s-priv li .ic{color:#7CF0B6}
 .t2 #s-priv code.in{background:rgba(255,255,255,.12);color:#fff}
 .t2 #s-priv .pv-dia{background:#0D3036;box-shadow:inset 0 0 0 1px rgba(255,255,255,.1);color:#fff}
@@ -532,7 +529,6 @@ footer a:hover{color:var(--ink)}
 
   <header class="hero" id="top">
     <div class="wrap">
-      <span class="eyebrow rev" data-t="eyebrow"></span>
       <h1 class="rev" data-th="h1"></h1>
       <p class="lead rev" data-t="sub"></p>
       <div class="ctas rev">
@@ -563,7 +559,7 @@ footer a:hover{color:var(--ink)}
   <div class="diff wrap rev"><p><span data-t="diff_a"></span> <b data-t="diff_b"></b></p></div>
 
   <section id="s-vid" class="wrap">
-    <div class="sh c rev"><span class="eyebrow" data-t="vid_e"></span><h2 data-t="vid_h"></h2><p class="lead" data-t="vid_d"></p></div>
+    <div class="sh c rev"><h2 data-t="vid_h"></h2><p class="lead" data-t="vid_d"></p></div>
     <div class="vplayer shell rev"><div class="core">
       <video id="promoV" preload="none" playsinline poster="video/promo-poster.webp" data-aria="vid_aria">
         <source src="video/promo.webm" type="video/webm"><source src="video/promo.mp4" type="video/mp4">
@@ -573,7 +569,7 @@ footer a:hover{color:var(--ink)}
   </section>
 
   <section id="s-hw" class="wrap">
-    <div class="sh rev"><span class="eyebrow" data-n="01" data-t="hw_e"></span><h2 data-t="hw_h"></h2></div>
+    <div class="sh rev"><h2 data-t="hw_h"></h2></div>
     <div class="hw">
       <div class="shell rev"><div class="core"><span class="n">01</span><h3 data-t="hw1_t"></h3><p data-th="hw1_d"></p><div class="v"><div class="jsonl">{"type":"assistant","message":{"id":"msg_01…",<br>&nbsp;"usage":{<b>"input_tokens"</b>:<i>412</i>,<b>"cache_read"</b>:<i>38204</i>,<br>&nbsp;<b>"output_tokens"</b>:<i>918</i>}},"requestId":"req_7f…"}</div></div></div></div>
       <div class="shell rev"><div class="core"><span class="n">02</span><h3 data-t="hw2_t"></h3><p data-t="hw2_d"></p><div class="v"><div class="dedup"><span>message.id</span>+<span>requestId</span>→<span class="eq" data-t="hw2_c"></span></div></div></div></div>
@@ -583,7 +579,7 @@ footer a:hover{color:var(--ink)}
 
   <section id="s-app">
     <div class="wrap">
-      <div class="sh c rev"><span class="eyebrow" data-n="02" data-t="nav_app"></span><h2 data-t="app_h"></h2><p class="lead" data-t="app_d"></p></div>
+      <div class="sh c rev"><h2 data-t="app_h"></h2><p class="lead" data-t="app_d"></p></div>
       <div class="shots rev">
         <div class="stabs" role="tablist" aria-label="Bo‘limlar">
           <button role="tab" aria-selected="true" data-pg="bugun"><span data-t="pg_ov"></span></button>
@@ -613,7 +609,7 @@ footer a:hover{color:var(--ink)}
   </section>
 
   <section id="s-feat" class="wrap k-light">
-    <div class="sh rev"><span class="eyebrow" data-n="03" data-t="nav_feat"></span><h2 data-t="feat_h"></h2></div>
+    <div class="sh rev"><h2 data-t="feat_h"></h2></div>
     <div class="bento">
       <div class="shell b-not rev"><div class="core"><h3 data-t="f_not_t"></h3><p data-t="f_not_d"></p><div class="vis"><div data-c="toast2"></div><div data-c="toast"></div></div></div></div>
       <div class="shell b-lim rev"><div class="core"><h3 data-t="f_lim_t"></h3><p data-t="f_lim_d"></p><div class="vis"><img class="shot limg" data-img="panel" alt="" data-alt="alt_panel"></div></div></div>
@@ -625,8 +621,7 @@ footer a:hover{color:var(--ink)}
   <section id="s-sav">
     <div class="wrap sv">
       <div class="rev">
-        <span class="eyebrow" data-t="nav_sav"></span>
-        <h2 style="margin-top:16px;max-width:13ch" data-t="sv_h"></h2>
+        <h2 style="max-width:13ch" data-t="sv_h"></h2>
         <p class="lead" style="margin-top:18px;max-width:46ch" data-t="sv_d"></p>
         <div class="num">~84K<small data-t="sv_num"></small></div>
         <div class="causes" data-c="causes"></div>
@@ -641,8 +636,7 @@ footer a:hover{color:var(--ink)}
   <section id="s-priv">
     <div class="wrap pv">
       <div class="rev">
-        <span class="eyebrow" data-t="nav_priv"></span>
-        <h2 style="margin-top:16px" data-t="priv_h"></h2>
+        <h2 data-t="priv_h"></h2>
         <p class="lead" style="margin-top:18px" data-th="priv_d"></p>
         <ul><li><svg class="ic"><use href="#i-shield"/></svg><span data-t="priv_1"></span></li><li><svg class="ic"><use href="#i-gh"/></svg><span data-t="priv_4"></span></li></ul>
       </div>
@@ -651,7 +645,7 @@ footer a:hover{color:var(--ink)}
   </section>
 
   <section id="s-inst" class="wrap">
-    <div class="sh rev"><span class="eyebrow" data-n="04" data-t="nav_inst"></span><h2 data-t="inst_h"></h2></div>
+    <div class="sh rev"><h2 data-t="inst_h"></h2></div>
     <div class="ins">
       <div class="shell rev"><div class="core" data-c="install"></div></div>
       <div class="shell rev"><div class="dmg"><div><div class="row"><img src="img/icon.png" alt=""><svg class="ar" viewBox="0 0 24 24"><use href="#i-arrow"/></svg><div class="fold"><span>A</span></div></div><p>Token Kuzatuv.app → Applications</p></div></div></div>
@@ -659,7 +653,7 @@ footer a:hover{color:var(--ink)}
   </section>
 
   <section id="s-faq" class="wrap faqg">
-    <div class="sh rev"><span class="eyebrow" data-n="05" data-t="nav_faq"></span><h2 data-t="faq_h"></h2></div>
+    <div class="sh rev"><h2 data-t="faq_h"></h2></div>
     <div class="faq rev" data-c="faq"></div>
   </section>
 
@@ -681,20 +675,20 @@ const ICON="img/icon.png", REPO="https://github.com/aliumirovux/TokenKuzat", REL
 const T={
 uz:{
  nav_app:"Ilova ichi",nav_sav:"Tejash",nav_priv:"Maxfiylik",nav_inst:"O‘rnatish",nav_faq:"Savollar",nav_dl:"Yuklab olish",nav_feat:"Imkoniyatlar",
- eyebrow:"Claude Code uchun · Mac menyu satri",
+
  h1:"Tokenlaringiz qayerga ketyapti — <span class='g'>endi ko‘rinadi</span>",
  sub:"Token Kuzatuv Mac menyu satrida turadi va jonli ko‘rsatadi: qaysi agent ishlayapti, nimani o‘qiyapti, qancha token ketdi va limit qachon tugaydi.",
  cta_dl:"macOS uchun yuklab olish",cta_copy:"Nusxalandi",fine:"Bepul · Ochiq kod · macOS 13+ · Apple Silicon va Intel",ver:"So‘nggi versiya",
  an1:"menyu satrida qolgan limit",an2:"5 soat va hafta limiti",an3:"shu sur’atda qachon tugaydi",an4:"sessiya sxemasi va tokenlar",
  pf1_b:"1 soniya",pf1:"yangi qatorlar shunchalik tez o‘qiladi",pf2_b:"30 kun",pf2:"transkriptlar kuzatiladi, tarix undan ham uzoq saqlanadi",pf3:"hisob, server va obuna kerak emas",pf4_b:"4 xil",pf4:"bildirishnoma: tugadi, osildi, xato, limit",
  diff_a:"Limit foizini ko‘rsatadigan ilovalar ko‘p.",diff_b:"Token Kuzatuv sababini ko‘rsatadi.",
- hw_e:"Qanday ishlaydi",hw_h:"Uch qadam, hech qanday sozlashsiz",
+hw_h:"Uch qadam, hech qanday sozlashsiz",
  hw1_t:"Claude Code yozadi",hw1_d:"Har javob va asbob chaqiruvi <code class='in'>~/.claude/projects</code> dagi .jsonl faylga tushadi — Claude Code buni o‘zi qiladi.",
  hw2_t:"Token Kuzatuv o‘qiydi",hw2_d:"Faqat yangi qo‘shilgan qatorlarni, har soniyada. Bir javob bir necha qatorga bo‘linsa ham bir marta sanaladi.",hw2_c:"1 marta",
  hw3_t:"Siz ko‘rasiz",hw3_d:"Menyu satri, xarita, tejash va bildirishnomalar — hammasi shu ma’lumotdan, Mac’ingizdan chiqmasdan.",
  app_h:"Bitta oynada butun manzara",app_d:"Menyu satridagi belgini bosing — katta oyna ochiladi. Bo‘limlarni bosib ko‘ring.",
  pg_ov:"Bugun",pg_map:"Agentlar sxemasi",pg_sav:"Tejash",pg_his:"Tarix",pg_off:"Ofis",
- vid_e:"Video · 40 soniya",vid_h:"Bir daqiqaga yetmay hammasini ko‘ring",vid_d:"Qisqa tanishtiruv: limit, agentlar xaritasi, tejash va bildirishnomalar. Video ingliz tilida.",vid_btn:"Videoni ko‘rish",vid_aria:"Token Kuzatuv tanishtiruv videosi, ingliz tilida, 39 soniya",live_t:"Haqiqiy yozuv",live_d:"Documents sessiyasi: agentlar xaritasi, Tejash oynasi va Bugun sahifasi. Ovozsiz, 1,5× tezlikda.",live_aria:"Ilovadan ekran yozuvi: sessiya xaritasi, tejash oynasi va Bugun sahifasi",live_play:"Videoni qo‘yish",live_pause:"Videoni to‘xtatish",
+vid_h:"Bir daqiqaga yetmay hammasini ko‘ring",vid_d:"Qisqa tanishtiruv: limit, agentlar xaritasi, tejash va bildirishnomalar. Video ingliz tilida.",vid_btn:"Videoni ko‘rish",vid_aria:"Token Kuzatuv tanishtiruv videosi, ingliz tilida, 39 soniya",live_t:"Haqiqiy yozuv",live_d:"Documents sessiyasi: agentlar xaritasi, Tejash oynasi va Bugun sahifasi. Ovozsiz, 1,5× tezlikda.",live_aria:"Ilovadan ekran yozuvi: sessiya xaritasi, tejash oynasi va Bugun sahifasi",live_play:"Videoni qo‘yish",live_pause:"Videoni to‘xtatish",
  shot_cap:"Ilovaning haqiqiy oynalari, muallifning Mac’idan olingan.",alt_map:"Token Kuzatuv: sessiya sxemasi — so‘rov, asosiy agent, asboblar va natija",alt_panel:"Menyu satri paneli: 5 soatlik va haftalik limit, qayerga ketgani va bashorat",alt_bugun:"Bugun sahifasi: Claude limiti halqalari va bashorat",alt_tarix:"Tarix sahifasi: 30 kunlik grafik, tarkib va jadval",alt_ofis:"Ofis: agentlar robot bo‘lib ishlaydigan 3D bino",alt_cloud:"5 soatlik limit qayerga ketdi: Mac’da, chat va bulutda, kuzatuvdan oldin",
  ov_now:"HOZIR",ov_now_t:"sayr-web — asosiy agent fayllarni o‘qiyapti",
  ov_m1:"Bugun",ov_m1e:"kechagidan +12%",ov_m2:"Faol vaqt",ov_m2v:"3 soat 40 daq",ov_m3:"Sessiyalar",ov_m3v:"7",ov_m3e:"2 tasi ishlayapti",ov_m4:"Tezlik",
@@ -747,20 +741,20 @@ uz:{
 },
 en:{
  nav_app:"Inside",nav_sav:"Savings",nav_priv:"Privacy",nav_inst:"Install",nav_faq:"FAQ",nav_dl:"Download",nav_feat:"Features",
- eyebrow:"For Claude Code · Mac menu bar",
+
  h1:"See exactly where your <span class='g'>tokens go</span>",
  sub:"Token Kuzatuv lives in your Mac menu bar and shows it live: which agent is running, what it’s reading, how many tokens it used and when your limit runs out.",
  cta_dl:"Download for macOS",cta_copy:"Copied",fine:"Free · Open source · macOS 13+ · Apple Silicon & Intel",ver:"Latest",
  an1:"limit left, in the menu bar",an2:"5-hour and weekly limit",an3:"when it runs out at this pace",an4:"session map and tokens",
  pf1_b:"1 second",pf1:"is how fast new lines are read",pf2_b:"30 days",pf2:"of transcripts tracked; history is kept even longer",pf3:"accounts, servers or subscriptions needed",pf4_b:"4 kinds",pf4:"of alerts: done, stuck, errors, limit",
  diff_a:"Plenty of apps show a limit percentage.",diff_b:"Token Kuzatuv shows the reason.",
- hw_e:"How it works",hw_h:"Three steps, nothing to configure",
+hw_h:"Three steps, nothing to configure",
  hw1_t:"Claude Code writes",hw1_d:"Every reply and tool call lands in a .jsonl file in <code class='in'>~/.claude/projects</code> — Claude Code does this on its own.",
  hw2_t:"Token Kuzatuv reads",hw2_d:"Only the newly added lines, every second. A reply split across several lines is still counted once.",hw2_c:"counted once",
  hw3_t:"You see it",hw3_d:"Menu bar, map, savings and alerts — all from that data, without leaving your Mac.",
  app_h:"The whole picture in one window",app_d:"Click the menu bar icon to open the main window. Try the sections.",
  pg_ov:"Today",pg_map:"Session map",pg_sav:"Savings",pg_his:"History",pg_off:"Office",
- vid_e:"Video · 40 seconds",vid_h:"See it all in under a minute",vid_d:"A short tour: limits, the agent map, savings and alerts.",vid_btn:"Watch the video",vid_aria:"Token Kuzatuv product video, 39 seconds",live_t:"Real recording",live_d:"A Documents session: the agent map, the Savings popover and the Today page. Silent, sped up 1.5×, UI in Uzbek.",live_aria:"Screen recording of the app: session map, savings popover and the Today page",live_play:"Play video",live_pause:"Pause video",
+vid_h:"See it all in under a minute",vid_d:"A short tour: limits, the agent map, savings and alerts.",vid_btn:"Watch the video",vid_aria:"Token Kuzatuv product video, 39 seconds",live_t:"Real recording",live_d:"A Documents session: the agent map, the Savings popover and the Today page. Silent, sped up 1.5×, UI in Uzbek.",live_aria:"Screen recording of the app: session map, savings popover and the Today page",live_play:"Play video",live_pause:"Pause video",
  shot_cap:"Real app windows, captured on the author’s Mac.",alt_map:"Token Kuzatuv session map: prompt, main agent, tools and result",alt_panel:"Menu bar panel: 5-hour and weekly limit, where it went, and a forecast",alt_bugun:"Today page: Claude limit rings and forecast",alt_tarix:"History page: 30-day chart, breakdown and table",alt_ofis:"Office: a 3D building where agents work as robots",alt_cloud:"Where the 5-hour limit went: on this Mac, chat & cloud, before tracking",
  ov_now:"NOW",ov_now_t:"sayr-web — the main agent is reading files",
  ov_m1:"Today",ov_m1e:"+12% vs yesterday",ov_m2:"Active time",ov_m2v:"3 h 40 min",ov_m3:"Sessions",ov_m3v:"7",ov_m3e:"2 working",ov_m4:"Rate",
